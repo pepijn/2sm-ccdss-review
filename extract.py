@@ -117,6 +117,7 @@ for name, study in studies.iteritems():
             if len(annotations) > 1:
                 for index, annotation in enumerate(annotations):
                     el = PyOrgMode.OrgNode.Element()
+                    el.heading = "#%d" % (index + 1)
                     _sched = PyOrgMode.OrgSchedule()
                     _sched._append(el, _sched.Element(scheduled=annotation['modified'].strftime('<%Y-%m-%d %a %H:%M>')))
                     _props = PyOrgMode.OrgDrawer.Element("PROPERTIES")

@@ -89,7 +89,7 @@ MYCIN example:
 Whether to treat, choice of antibiotic(s), and strength of recommendation.
 #+END_EXAMPLE
 
-*** 
+*** #1
 SCHEDULED: <2016-04-11 Mon 21:07>
 :PROPERTIES:
 :PAGE: 2
@@ -97,7 +97,7 @@ SCHEDULED: <2016-04-11 Mon 21:07>
 
 The CCDSS tool suggests an asthma severity classification.
 
-*** 
+*** #2
 SCHEDULED: <2016-04-11 Mon 21:16>
 :PROPERTIES:
 :PAGE: 2
@@ -147,7 +147,7 @@ Text input from user (eg, answering simple questions, entering data, user enters
 “why” or “how”).
 #+END_EXAMPLE
 
-*** 
+*** #1
 SCHEDULED: <2016-04-11 Mon 21:03>
 :PROPERTIES:
 :PAGE: 2
@@ -156,7 +156,7 @@ SCHEDULED: <2016-04-11 Mon 21:03>
 Information in the data-entry tool for capturing asthma symptom frequency and
 diagnosis and medication history.
 
-*** 
+*** #2
 SCHEDULED: <2016-04-11 Mon 21:29>
 :PROPERTIES:
 :PAGE: 2

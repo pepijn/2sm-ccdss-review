@@ -1,10 +1,17 @@
 * Common
-** TODO Decision-support system
+** Decision-support system
+SCHEDULED: <2016-04-13 Wed 20:33>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Rules represented as LISP expressions and an associated inference engine.
 #+END_EXAMPLE
+
+Rule based reminder system.
+
 
 ** Trigger
 SCHEDULED: <2016-04-13 Wed 13:16>
@@ -37,10 +44,6 @@ Patients admitted to the general-medicine service of one hospital
 
 
 ** Clinical knowledge
-SCHEDULED: <2016-04-13 Wed 13:21>
-:PROPERTIES:
-:PAGE: 1
-:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
@@ -48,7 +51,21 @@ MYCIN example:
 - Bacterial identification and empirical antibiotic choice.
 #+END_EXAMPLE
 
+*** #1
+SCHEDULED: <2016-04-13 Wed 13:21>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
 National guidelines regarding the use of 5 therapies.
+
+*** #2
+SCHEDULED: <2016-04-13 Wed 20:43>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+Influenza seasonality.
 
 
 ** Patient data
@@ -60,7 +77,7 @@ MYCIN example:
 - Entered by user (not integrated with EHR).
 #+END_EXAMPLE
 
-*** 
+*** #1
 SCHEDULED: <2016-04-13 Wed 13:22>
 :PROPERTIES:
 :PAGE: 1
@@ -69,24 +86,32 @@ SCHEDULED: <2016-04-13 Wed 13:22>
 Routinely collected data such demographic characteristics, lists of medical
 problems etc.
 
-*** 
-SCHEDULED: <2016-04-13 Wed 13:24>
+*** #2
+SCHEDULED: <2016-04-13 Wed 20:18>
 :PROPERTIES:
 :PAGE: 1
 :END:
 
-Information from vaccination status by standard admission questionnaire
+Information from vaccination status by standard admission questionnaire.
 
 
-** TODO Clinical conclusions
+** Clinical conclusions
+SCHEDULED: <2016-04-13 Wed 20:48>
+:PROPERTIES:
+:PAGE: 2
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Identity of organism, underlying inferences, and degree of certainty.
 #+END_EXAMPLE
 
+Membership of patient group at risk, and appropriate preventive therapy and
+argumentation.
+
+
 ** Clinical advice
-SCHEDULED: <2016-04-13 Wed 14:12>
+SCHEDULED: <2016-04-13 Wed 20:19>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -96,8 +121,8 @@ MYCIN example:
 Whether to treat, choice of antibiotic(s), and strength of recommendation.
 #+END_EXAMPLE
 
-The system is actively setting the default value depending on the most
-appropriate treatment
+Whether to order, choice of prescription, and default value with regards to
+acceptance or rejection.
 
 
 * Cognitive-behavioral stream
@@ -117,13 +142,21 @@ Resident physicians and medical students on the general-medicine team that write
 all orders
 
 
-** TODO Cognitive-behavioral knowledge
+** Cognitive-behavioral knowledge
+SCHEDULED: <2016-04-13 Wed 20:37>
+:PROPERTIES:
+:PAGE: 2
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Need to communicate in natural language; need for explanation of reasoning; need
 to manage and convey uncertainty.
 #+END_EXAMPLE
+
+Need to communicate in natural language; need for explanation of reasoning; need
+to specify order.
+
 
 ** User data
 SCHEDULED: <2016-04-13 Wed 13:32>
@@ -140,27 +173,49 @@ Text input from user (eg, answering simple questions, entering data, user enters
 A user either accepts or rejects a recommendation.
 
 
-** TODO Cognitive-behavioral conclusions
+** Cognitive-behavioral conclusions
+SCHEDULED: <2016-04-13 Wed 20:41>
+:PROPERTIES:
+:PAGE: 2
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 User wants advice, an explanation, or help.
 #+END_EXAMPLE
 
+User should order preventitive care for patient.
+
+
 ** Presentation
-*** TODO Content
+*** Content
+SCHEDULED: <2016-04-13 Wed 20:49>
+:PROPERTIES:
+:PAGE: 2
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Conclusion and advice phrased in natural language
 #+END_EXAMPLE
 
-*** TODO Timing
+Recommendations phrased in natural language.
+
+
+*** Timing
+SCHEDULED: <2016-04-13 Wed 20:51>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Immediate
 #+END_EXAMPLE
+
+The alerts could have been generated earlier than the moment of ordering by
+user.
+
 
 *** Channel
 SCHEDULED: <2016-04-13 Wed 19:41>
@@ -176,24 +231,45 @@ Stand-alone system
 Integrated into order-entry program
 
 
-*** TODO Format
+*** Format
+SCHEDULED: <2016-04-13 Wed 20:51>
+:PROPERTIES:
+:PAGE: 2
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Plain text
 #+END_EXAMPLE
 
-*** TODO Notification
+Plain text.
+
+
+*** Notification
+SCHEDULED: <2016-04-13 Wed 20:57>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Direct display
 #+END_EXAMPLE
 
-*** TODO Interaction functions
+User receives reminder after neglecting the first opportunity.
+
+
+*** Interaction functions
+SCHEDULED: <2016-04-13 Wed 20:53>
+:PROPERTIES:
+:PAGE: 2
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 User may type “why” or “how” for explanation
 #+END_EXAMPLE
+
+User may pick 'order', 'revise' or 'omit'.
+
 
