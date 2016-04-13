@@ -1,0 +1,262 @@
+* Common
+** Decision-support system
+SCHEDULED: <2016-04-11 Mon 21:29>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Rules represented as LISP expressions and an associated inference engine.
+#+END_EXAMPLE
+
+Externally described decision support framework.
+
+
+** Trigger
+SCHEDULED: <2016-04-11 Mon 21:08>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Initiated by a user seeking advice (clinician).
+#+END_EXAMPLE
+
+Alerts and reminders in the EHR guide the clinician to the CDSS.
+
+
+* Clinical stream
+** Patient
+SCHEDULED: <2016-04-11 Mon 21:02>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Hospitalized patients with severe bacterial infections.
+- Demographics, allergies, background conditions (eg., compromised host?), etc.
+#+END_EXAMPLE
+
+Children aged 2 to 18 years with asthma, identified by the ICD-9 code in their
+chronic-problem lists or visit diagnoses.
+
+
+** Clinical knowledge
+SCHEDULED: <2016-04-11 Mon 21:12>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Clinical experts.
+- Bacterial identification and empirical antibiotic choice.
+#+END_EXAMPLE
+
+Asthma severity classification guidelines (NAEPP).
+
+
+** Patient data
+SCHEDULED: <2016-04-11 Mon 21:06>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Gender, age, current diagnosis, vital signs, bacterial morphology, culture
+  site, etc.
+- Entered by user (not integrated with EHR).
+#+END_EXAMPLE
+
+Asthma severity classification is entered by user.
+
+
+** TODO Clinical conclusions
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Identity of organism, underlying inferences, and degree of certainty.
+#+END_EXAMPLE
+
+** Clinical advice
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Whether to treat, choice of antibiotic(s), and strength of recommendation.
+#+END_EXAMPLE
+
+*** 
+SCHEDULED: <2016-04-11 Mon 21:07>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+The CCDSS tool suggests an asthma severity classification.
+
+*** 
+SCHEDULED: <2016-04-11 Mon 21:16>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+The CCDSS presents whether the asthma is under control or not. (Ik denk dat ik
+hier te ver ga. Ik kan dit niet in de tekst terug vinden, alleen in het plaatje.
+Kunnen jullie mij vertellen wat de grenzen ongeveer zijn?)
+
+
+* Cognitive-behavioral stream
+** User(s)
+SCHEDULED: <2016-04-11 Mon 21:03>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Clinician(s) requiring infectious disease consultation (expertise in other
+areas).
+#+END_EXAMPLE
+
+Clinicians at practices with experience using an ambulatory EHR.
+
+
+** Cognitive-behavioral knowledge
+SCHEDULED: <2016-04-11 Mon 21:02>
+:PROPERTIES:
+:PAGE: 0
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Need to communicate in natural language; need for explanation of reasoning; need
+to manage and convey uncertainty.
+#+END_EXAMPLE
+
+Need to improve clinician adherence to guidelines.
+
+
+** User data
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Text input from user (eg, answering simple questions, entering data, user enters
+“why” or “how”).
+#+END_EXAMPLE
+
+*** 
+SCHEDULED: <2016-04-11 Mon 21:03>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+Information in the data-entry tool for capturing asthma symptom frequency and
+diagnosis and medication history.
+
+*** 
+SCHEDULED: <2016-04-11 Mon 21:29>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+The clinician is prompted to enter an asthma severity classification if none is
+on file.
+
+
+** Cognitive-behavioral conclusions
+SCHEDULED: <2016-04-11 Mon 21:03>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+User wants advice, an explanation, or help.
+#+END_EXAMPLE
+
+User needs to be reminded of guideline based recommendations.
+
+
+** Presentation
+*** Content
+SCHEDULED: <2016-04-11 Mon 21:10>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Conclusion and advice phrased in natural language
+#+END_EXAMPLE
+
+Patient data and recommendations phrased in natural language. (Mag ik dit
+plaatje gebruiken voor data extractie?)
+
+
+*** TODO Timing
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Immediate
+#+END_EXAMPLE
+
+*** Channel
+SCHEDULED: <2016-04-11 Mon 21:02>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Stand-alone system
+#+END_EXAMPLE
+
+Embedded in EHR system.
+
+
+*** Format
+SCHEDULED: <2016-04-11 Mon 21:32>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Plain text
+#+END_EXAMPLE
+
+Plain text. (Mag ik dit plaatje gebruiken voor data extractie? Het staat
+namelijk niet in dit artikel beschreven.)
+
+
+*** Notification
+SCHEDULED: <2016-04-11 Mon 21:03>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Direct display
+#+END_EXAMPLE
+
+Presented in the clinical workflow without disruptive pop-ups.
+
+
+*** Interaction functions
+SCHEDULED: <2016-04-11 Mon 21:03>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+User may type “why” or “how” for explanation
+#+END_EXAMPLE
+
+User may update asthma severity classification status.
+
+

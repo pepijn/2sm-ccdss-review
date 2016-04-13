@@ -1,0 +1,61 @@
+* Common
+** Decision-support system
+Rules represented as LISP expressions and an associated inference engine.
+
+** Trigger
+Initiated by a user seeking advice (clinician).
+
+* Clinical stream
+** Patient
+- Hospitalized patients with severe bacterial infections.
+- Demographics, allergies, background conditions (eg., compromised host?), etc.
+
+** Clinical knowledge
+- Clinical experts.
+- Bacterial identification and empirical antibiotic choice.
+
+** Patient data
+- Gender, age, current diagnosis, vital signs, bacterial morphology, culture
+  site, etc.
+- Entered by user (not integrated with EHR).
+
+** Clinical conclusions
+Identity of organism, underlying inferences, and degree of certainty.
+
+** Clinical advice
+Whether to treat, choice of antibiotic(s), and strength of recommendation.
+
+* Cognitive-behavioral stream
+** User(s)
+Clinician(s) requiring infectious disease consultation (expertise in other
+areas).
+
+** Cognitive-behavioral knowledge
+Need to communicate in natural language; need for explanation of reasoning; need
+to manage and convey uncertainty.
+
+** User data
+Text input from user (eg, answering simple questions, entering data, user enters
+“why” or “how”).
+
+** Cognitive-behavioral conclusions
+User wants advice, an explanation, or help.
+
+** Presentation
+*** Content
+Conclusion and advice phrased in natural language
+
+*** Timing
+Immediate
+
+*** Channel
+Stand-alone system
+
+*** Format
+Plain text
+
+*** Notification
+Direct display
+
+*** Interaction functions
+User may type “why” or “how” for explanation
