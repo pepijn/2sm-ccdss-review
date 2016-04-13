@@ -127,7 +127,7 @@ acceptance or rejection.
 
 * Cognitive-behavioral stream
 ** User(s)
-SCHEDULED: <2016-04-13 Wed 21:04>
+SCHEDULED: <2016-04-13 Wed 21:12>
 :PROPERTIES:
 :PAGE: 1
 :END:
