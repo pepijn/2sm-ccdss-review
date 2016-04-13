@@ -162,12 +162,19 @@ MYCIN example:
 Immediate
 #+END_EXAMPLE
 
-*** TODO Channel
+*** Channel
+SCHEDULED: <2016-04-13 Wed 19:41>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Stand-alone system
 #+END_EXAMPLE
+
+Integrated into order-entry program
+
 
 *** TODO Format
 
