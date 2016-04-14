@@ -1,0 +1,137 @@
+* Common
+** TODO Decision-support system
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Rules represented as LISP expressions and an associated inference engine.
+#+END_EXAMPLE
+
+** TODO Trigger
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Initiated by a user seeking advice (clinician).
+#+END_EXAMPLE
+
+* Clinical stream
+** Patient
+SCHEDULED: <2016-04-14 Thu 11:43>
+:PROPERTIES:
+:PAGE: 0
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Hospitalized patients with severe bacterial infections.
+- Demographics, allergies, background conditions (eg., compromised host?), etc.
+#+END_EXAMPLE
+
+hoi ewa daar
+
+
+** TODO Clinical knowledge
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Clinical experts.
+- Bacterial identification and empirical antibiotic choice.
+#+END_EXAMPLE
+
+** TODO Patient data
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Gender, age, current diagnosis, vital signs, bacterial morphology, culture
+  site, etc.
+- Entered by user (not integrated with EHR).
+#+END_EXAMPLE
+
+** TODO Clinical conclusions
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Identity of organism, underlying inferences, and degree of certainty.
+#+END_EXAMPLE
+
+** TODO Clinical advice
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Whether to treat, choice of antibiotic(s), and strength of recommendation.
+#+END_EXAMPLE
+
+* Cognitive-behavioral stream
+** TODO User(s)
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Clinician(s) requiring infectious disease consultation (expertise in other
+areas).
+#+END_EXAMPLE
+
+** TODO Cognitive-behavioral knowledge
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Need to communicate in natural language; need for explanation of reasoning; need
+to manage and convey uncertainty.
+#+END_EXAMPLE
+
+** TODO User data
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Text input from user (eg, answering simple questions, entering data, user enters
+“why” or “how”).
+#+END_EXAMPLE
+
+** TODO Cognitive-behavioral conclusions
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+User wants advice, an explanation, or help.
+#+END_EXAMPLE
+
+** Presentation
+*** TODO Content
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Conclusion and advice phrased in natural language
+#+END_EXAMPLE
+
+*** TODO Timing
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Immediate
+#+END_EXAMPLE
+
+*** TODO Channel
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Stand-alone system
+#+END_EXAMPLE
+
+*** TODO Format
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Plain text
+#+END_EXAMPLE
+
+*** TODO Notification
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Direct display
+#+END_EXAMPLE
+
+*** TODO Interaction functions
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+User may type “why” or “how” for explanation
+#+END_EXAMPLE
+

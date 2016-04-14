@@ -85,7 +85,7 @@ for name, study in studies.iteritems():
         continue
 
     base = PyOrgMode.OrgDataStructure()
-    base.load_from_file("sources/mycin.org")
+    base.load_from_file("mycin.org")
 
     def extract(root):
         if all([type(node) is str for node in root.content]):
