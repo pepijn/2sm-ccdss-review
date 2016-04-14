@@ -34,6 +34,7 @@ guard :shell do
     puts path
     `chmod 600 sources/*.org`
     `python extract.py sources/*.pdf`
+    `rm "#{path}"`
     `chmod 400 sources/*.org`
   end
 end
