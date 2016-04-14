@@ -1,21 +1,35 @@
 * Common
-** TODO Decision-support system
+** Decision-support system
+SCHEDULED: <2016-04-14 Thu 14:29>
+:PROPERTIES:
+:PAGE: 0
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Rules represented as LISP expressions and an associated inference engine.
 #+END_EXAMPLE
 
-** TODO Trigger
+N/A
+
+
+** Trigger
+SCHEDULED: <2016-04-14 Thu 14:28>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Initiated by a user seeking advice (clinician).
 #+END_EXAMPLE
 
+N/A
+
+
 * Clinical stream
 ** Patient
-SCHEDULED: <2016-04-14 Thu 11:43>
+SCHEDULED: <2016-04-14 Thu 14:07>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -26,10 +40,14 @@ MYCIN example:
 - Demographics, allergies, background conditions (eg., compromised host?), etc.
 #+END_EXAMPLE
 
-hoi ewa daar
+Women undergoing ovarian stimulation to treat infertility.
 
 
-** TODO Clinical knowledge
+** Clinical knowledge
+SCHEDULED: <2016-04-14 Thu 13:54>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
@@ -37,7 +55,10 @@ MYCIN example:
 - Bacterial identification and empirical antibiotic choice.
 #+END_EXAMPLE
 
-** TODO Patient data
+Average hormone (FSH, LH) levels and ratios
+
+
+** Patient data
 
 #+BEGIN_EXAMPLE
 MYCIN example:
@@ -46,22 +67,58 @@ MYCIN example:
 - Entered by user (not integrated with EHR).
 #+END_EXAMPLE
 
-** TODO Clinical conclusions
+*** #1
+SCHEDULED: <2016-04-14 Thu 14:17>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+Regimen used, hormone levels, pelvic ultrasonography results, results of
+previous cycles, protocol used.
+
+*** #2
+SCHEDULED: <2016-04-14 Thu 14:18>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+Patient age, number of treated cycles, cause of infertility.
+
+
+** Clinical conclusions
+SCHEDULED: <2016-04-14 Thu 14:14>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Identity of organism, underlying inferences, and degree of certainty.
 #+END_EXAMPLE
 
-** TODO Clinical advice
+Classification of patient ovaries FSH simulation response
+
+
+** Clinical advice
+SCHEDULED: <2016-04-14 Thu 14:18>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Whether to treat, choice of antibiotic(s), and strength of recommendation.
 #+END_EXAMPLE
 
+Drug management
+
+
 * Cognitive-behavioral stream
-** TODO User(s)
+** User(s)
+SCHEDULED: <2016-04-14 Thu 14:25>
+:PROPERTIES:
+:PAGE: 2
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
@@ -69,7 +126,14 @@ Clinician(s) requiring infectious disease consultation (expertise in other
 areas).
 #+END_EXAMPLE
 
-** TODO Cognitive-behavioral knowledge
+N/A, only the performers of the therapy are mentioned.
+
+
+** Cognitive-behavioral knowledge
+SCHEDULED: <2016-04-14 Thu 14:40>
+:PROPERTIES:
+:PAGE: 0
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
@@ -77,7 +141,14 @@ Need to communicate in natural language; need for explanation of reasoning; need
 to manage and convey uncertainty.
 #+END_EXAMPLE
 
-** TODO User data
+Need for expertise regarding FSH use; need to carefully monitor therapy.
+
+
+** User data
+SCHEDULED: <2016-04-14 Thu 14:20>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
@@ -85,53 +156,109 @@ Text input from user (eg, answering simple questions, entering data, user enters
 “why” or “how”).
 #+END_EXAMPLE
 
-** TODO Cognitive-behavioral conclusions
+Text input from user regarding therapy results
+
+
+** Cognitive-behavioral conclusions
+SCHEDULED: <2016-04-14 Thu 15:11>
+:PROPERTIES:
+:PAGE: 2
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 User wants advice, an explanation, or help.
 #+END_EXAMPLE
 
+N/A
+
+
 ** Presentation
-*** TODO Content
+*** Content
+SCHEDULED: <2016-04-14 Thu 14:44>
+:PROPERTIES:
+:PAGE: 0
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Conclusion and advice phrased in natural language
 #+END_EXAMPLE
 
-*** TODO Timing
+Software has sections with patient identity, fertility variables, monitoring of
+ovarian stimulation, end of cycle data, and statistical data.
+
+
+*** Timing
+SCHEDULED: <2016-04-14 Thu 14:45>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Immediate
 #+END_EXAMPLE
 
-*** TODO Channel
+N/A, no information regarding the display timing of the recommendation to the
+user.
+
+
+*** Channel
+SCHEDULED: <2016-04-14 Thu 14:46>
+:PROPERTIES:
+:PAGE: 0
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Stand-alone system
 #+END_EXAMPLE
 
-*** TODO Format
+N/A
+
+
+*** Format
+SCHEDULED: <2016-04-14 Thu 14:46>
+:PROPERTIES:
+:PAGE: 0
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Plain text
 #+END_EXAMPLE
 
-*** TODO Notification
+N/A
+
+
+*** Notification
+SCHEDULED: <2016-04-14 Thu 14:46>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Direct display
 #+END_EXAMPLE
 
-*** TODO Interaction functions
+N/A, no information regarding the display timing of the recommendation to the
+user.
+
+
+*** Interaction functions
+SCHEDULED: <2016-04-14 Thu 15:09>
+:PROPERTIES:
+:PAGE: 1
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 User may type “why” or “how” for explanation
 #+END_EXAMPLE
+
+N/A, the only mentioned input occurs at the end of the cycle, not during a
+decision support process.
+
 

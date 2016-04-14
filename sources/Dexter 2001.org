@@ -1,6 +1,6 @@
 * Common
 ** Decision-support system
-SCHEDULED: <2016-04-13 Wed 22:33>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -14,7 +14,7 @@ Rule based reminder system.
 
 
 ** Trigger
-SCHEDULED: <2016-04-13 Wed 23:04>
+SCHEDULED: <2016-04-13 Wed 23:15>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -29,7 +29,7 @@ A user enters an order.
 
 * Clinical stream
 ** Patient
-SCHEDULED: <2016-04-13 Wed 23:04>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -52,7 +52,7 @@ MYCIN example:
 #+END_EXAMPLE
 
 *** #1
-SCHEDULED: <2016-04-13 Wed 15:21>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -60,7 +60,7 @@ SCHEDULED: <2016-04-13 Wed 15:21>
 National guidelines regarding the use of 5 therapies.
 
 *** #2
-SCHEDULED: <2016-04-13 Wed 22:43>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -78,7 +78,7 @@ MYCIN example:
 #+END_EXAMPLE
 
 *** #1
-SCHEDULED: <2016-04-13 Wed 15:22>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -87,7 +87,7 @@ Routinely collected data such demographic characteristics, lists of medical
 problems etc.
 
 *** #2
-SCHEDULED: <2016-04-13 Wed 22:18>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -96,7 +96,7 @@ Information from vaccination status by standard admission questionnaire.
 
 
 ** Clinical conclusions
-SCHEDULED: <2016-04-13 Wed 22:48>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -111,7 +111,7 @@ argumentation.
 
 
 ** Clinical advice
-SCHEDULED: <2016-04-13 Wed 22:19>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -127,7 +127,7 @@ acceptance or rejection.
 
 * Cognitive-behavioral stream
 ** User(s)
-SCHEDULED: <2016-04-13 Wed 23:12>
+SCHEDULED: <2016-04-13 Wed 23:15>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -143,7 +143,7 @@ all orders.
 
 
 ** Cognitive-behavioral knowledge
-SCHEDULED: <2016-04-13 Wed 22:37>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -159,7 +159,7 @@ to specify order.
 
 
 ** User data
-SCHEDULED: <2016-04-13 Wed 15:32>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -174,7 +174,7 @@ A user either accepts or rejects a recommendation.
 
 
 ** Cognitive-behavioral conclusions
-SCHEDULED: <2016-04-13 Wed 22:41>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -189,7 +189,7 @@ User should order preventitive care for patient.
 
 ** Presentation
 *** Content
-SCHEDULED: <2016-04-13 Wed 22:49>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -203,7 +203,7 @@ Recommendations phrased in natural language.
 
 
 *** Timing
-SCHEDULED: <2016-04-13 Wed 22:51>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -218,7 +218,7 @@ user.
 
 
 *** Channel
-SCHEDULED: <2016-04-13 Wed 23:04>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -232,7 +232,7 @@ Integrated into order-entry program.
 
 
 *** Format
-SCHEDULED: <2016-04-13 Wed 22:51>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -246,7 +246,7 @@ Plain text.
 
 
 *** Notification
-SCHEDULED: <2016-04-13 Wed 22:57>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -260,7 +260,7 @@ User receives reminder after neglecting the first opportunity.
 
 
 *** Interaction functions
-SCHEDULED: <2016-04-13 Wed 22:53>
+SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
 :PAGE: 2
 :END:

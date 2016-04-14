@@ -31,7 +31,7 @@ guard :shell do
   end
 
   watch(%r{sources/(.*).pdf}) do |_path, _|
-    `rm -f sources/*.org`
+    `chmod 600 sources/*.org`
     `python extract.py sources/*.pdf`
     `chmod 400 sources/*.org`
   end
