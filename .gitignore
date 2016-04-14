@@ -9,3 +9,5 @@
 *.blg
 *.pdf
 sources/*.tex
+bachelor_thesis.tex
+/docs/
