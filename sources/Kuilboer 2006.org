@@ -1,0 +1,262 @@
+* Common
+** Decision-support system
+SCHEDULED: <2016-04-14 Thu 17:12>
+:PROPERTIES:
+:PAGE: 0
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Rules represented as LISP expressions and an associated inference engine.
+#+END_EXAMPLE
+
+Non-inquisitive critiquing system integrated with the GPs' EMR.
+
+
+** Trigger
+SCHEDULED: <2016-04-14 Thu 16:36>
+:PROPERTIES:
+:PAGE: 0
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Initiated by a user seeking advice (clinician).
+#+END_EXAMPLE
+
+As soon as the user has recorded all data.
+
+
+* Clinical stream
+** Patient
+SCHEDULED: <2016-04-14 Thu 16:40>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Hospitalized patients with severe bacterial infections.
+- Demographics, allergies, background conditions (eg., compromised host?), etc.
+#+END_EXAMPLE
+
+Patients that have certain ICPC codes (asthma, chronic bronchitis, etc.) in
+their EMR.
+
+
+** Clinical knowledge
+SCHEDULED: <2016-04-14 Thu 16:42>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Clinical experts.
+- Bacterial identification and empirical antibiotic choice.
+#+END_EXAMPLE
+
+Asthma and COPD guidelines. System is built under guidance of clinical experts.
+
+
+** Patient data
+SCHEDULED: <2016-04-14 Thu 16:28>
+:PROPERTIES:
+:PAGE: 0
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Gender, age, current diagnosis, vital signs, bacterial morphology, culture
+  site, etc.
+- Entered by user (not integrated with EHR).
+#+END_EXAMPLE
+
+Symptoms, diagnosis, measurements, referrals, tags, and problem list from the
+EHR.
+
+
+** Clinical conclusions
+SCHEDULED: <2016-04-14 Thu 17:09>
+:PROPERTIES:
+:PAGE: 0
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Identity of organism, underlying inferences, and degree of certainty.
+#+END_EXAMPLE
+
+Whether patient has asthma or COPD and reviews treatment.
+
+
+** Clinical advice
+SCHEDULED: <2016-04-14 Thu 16:33>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Whether to treat, choice of antibiotic(s), and strength of recommendation.
+#+END_EXAMPLE
+
+Patient-specific comments and calculations on measurements.
+
+
+* Cognitive-behavioral stream
+** User(s)
+SCHEDULED: <2016-04-14 Thu 16:38>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Clinician(s) requiring infectious disease consultation (expertise in other
+areas).
+#+END_EXAMPLE
+
+GPs that use an EMR.
+
+
+** Cognitive-behavioral knowledge
+SCHEDULED: <2016-04-14 Thu 17:04>
+:PROPERTIES:
+:PAGE: 0
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Need to communicate in natural language; need for explanation of reasoning; need
+to manage and convey uncertainty.
+#+END_EXAMPLE
+
+Need to review treatment compliance to guidelines; need for explanation of
+reasoning.
+
+
+** User data
+SCHEDULED: <2016-04-14 Thu 16:50>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Text input from user (eg, answering simple questions, entering data, user enters
+“why” or “how”).
+#+END_EXAMPLE
+
+User is able to request more information about the critique.
+
+
+** Cognitive-behavioral conclusions
+SCHEDULED: <2016-04-14 Thu 17:10>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+User wants advice, an explanation, or help.
+#+END_EXAMPLE
+
+User should reconsider his options.
+
+
+** Presentation
+*** Content
+SCHEDULED: <2016-04-14 Thu 16:46>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Conclusion and advice phrased in natural language
+#+END_EXAMPLE
+
+Comment and advice phrased in natural language.
+
+
+*** Timing
+SCHEDULED: <2016-04-14 Thu 16:47>
+:PROPERTIES:
+:PAGE: 0
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Immediate
+#+END_EXAMPLE
+
+Immediate.
+
+
+*** Channel
+SCHEDULED: <2016-04-14 Thu 16:29>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Stand-alone system
+#+END_EXAMPLE
+
+Part of medical-record system.
+
+
+*** Format
+SCHEDULED: <2016-04-14 Thu 16:34>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Plain text
+#+END_EXAMPLE
+
+Plain text.
+
+
+*** Notification
+SCHEDULED: <2016-04-14 Thu 16:37>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Direct display
+#+END_EXAMPLE
+
+Direct display
+
+
+*** Interaction functions
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+User may type “why” or “how” for explanation
+#+END_EXAMPLE
+
+**** #1
+SCHEDULED: <2016-04-14 Thu 16:31>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+User can interrupt the CCDSS analysis.
+
+**** #2
+SCHEDULED: <2016-04-14 Thu 16:44>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+User can request (additional) information for each comment.
+
+

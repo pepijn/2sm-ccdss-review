@@ -22,15 +22,16 @@
 guard :shell do
   watch('bachelor_thesis.tex.gpg') do |path, _|
     decrypted = path[0..-5]
-    `rm -f #{decrypted}`
-    `gpg --output #{decrypted} --decrypt #{path}`
+    `chmod 600 #{decrypted}`
+    `gpg --batch --yes --output #{decrypted} --decrypt #{path}`
     `chmod 400 #{decrypted}`
     `bibtex #{decrypted}`
     `pdflatex #{decrypted}`
     `pdflatex #{decrypted}`
   end
 
-  watch(%r{sources/(.*).pdf}) do |_path, _|
+  watch(%r{sources/(.*).pdf}) do |path, _|
+    puts path
     `chmod 600 sources/*.org`
     `python extract.py sources/*.pdf`
     `chmod 400 sources/*.org`
