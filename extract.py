@@ -10,6 +10,7 @@ import re
 from PyOrgMode import PyOrgMode
 import textwrap
 import dateutil.parser
+from datetime import timedelta
 
 # http://blog.hartwork.org/?p=612
 
@@ -56,6 +57,7 @@ for name, data in studies.iteritems():
                         continue
 
                     modified = dateutil.parser.parse(annot.get_modified()[2:-5])
+                    modified += timedelta(hours=2)
                     value_nick = annot.get_annot_type().value_nick
 
                     annotations.append(dict(content=content,

@@ -1,6 +1,6 @@
 * Common
 ** Decision-support system
-SCHEDULED: <2016-04-11 Mon 21:29>
+SCHEDULED: <2016-04-11 Mon 23:29>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -14,7 +14,7 @@ Externally described decision support framework.
 
 
 ** Trigger
-SCHEDULED: <2016-04-11 Mon 21:08>
+SCHEDULED: <2016-04-11 Mon 23:08>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -29,7 +29,7 @@ Alerts and reminders in the EHR guide the clinician to the CDSS.
 
 * Clinical stream
 ** Patient
-SCHEDULED: <2016-04-11 Mon 21:02>
+SCHEDULED: <2016-04-11 Mon 23:02>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -45,7 +45,7 @@ chronic-problem lists or visit diagnoses.
 
 
 ** Clinical knowledge
-SCHEDULED: <2016-04-11 Mon 21:12>
+SCHEDULED: <2016-04-11 Mon 23:12>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -60,7 +60,7 @@ Asthma severity classification guidelines (NAEPP).
 
 
 ** Patient data
-SCHEDULED: <2016-04-11 Mon 21:06>
+SCHEDULED: <2016-04-11 Mon 23:06>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -90,7 +90,7 @@ Whether to treat, choice of antibiotic(s), and strength of recommendation.
 #+END_EXAMPLE
 
 *** #1
-SCHEDULED: <2016-04-11 Mon 21:07>
+SCHEDULED: <2016-04-11 Mon 23:07>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -98,7 +98,7 @@ SCHEDULED: <2016-04-11 Mon 21:07>
 The CCDSS tool suggests an asthma severity classification.
 
 *** #2
-SCHEDULED: <2016-04-11 Mon 21:16>
+SCHEDULED: <2016-04-11 Mon 23:16>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -110,7 +110,7 @@ Kunnen jullie mij vertellen wat de grenzen ongeveer zijn?)
 
 * Cognitive-behavioral stream
 ** User(s)
-SCHEDULED: <2016-04-11 Mon 21:03>
+SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -125,7 +125,7 @@ Clinicians at practices with experience using an ambulatory EHR.
 
 
 ** Cognitive-behavioral knowledge
-SCHEDULED: <2016-04-11 Mon 21:02>
+SCHEDULED: <2016-04-11 Mon 23:02>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -148,7 +148,7 @@ Text input from user (eg, answering simple questions, entering data, user enters
 #+END_EXAMPLE
 
 *** #1
-SCHEDULED: <2016-04-11 Mon 21:03>
+SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -157,7 +157,7 @@ Information in the data-entry tool for capturing asthma symptom frequency and
 diagnosis and medication history.
 
 *** #2
-SCHEDULED: <2016-04-11 Mon 21:29>
+SCHEDULED: <2016-04-11 Mon 23:29>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -167,7 +167,7 @@ on file.
 
 
 ** Cognitive-behavioral conclusions
-SCHEDULED: <2016-04-11 Mon 21:03>
+SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -182,7 +182,7 @@ User needs to be reminded of guideline based recommendations.
 
 ** Presentation
 *** Content
-SCHEDULED: <2016-04-11 Mon 21:10>
+SCHEDULED: <2016-04-11 Mon 23:10>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -204,7 +204,7 @@ Immediate
 #+END_EXAMPLE
 
 *** Channel
-SCHEDULED: <2016-04-11 Mon 21:02>
+SCHEDULED: <2016-04-11 Mon 23:02>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -218,7 +218,7 @@ Embedded in EHR system.
 
 
 *** Format
-SCHEDULED: <2016-04-11 Mon 21:32>
+SCHEDULED: <2016-04-11 Mon 23:32>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -233,7 +233,7 @@ namelijk niet in dit artikel beschreven.)
 
 
 *** Notification
-SCHEDULED: <2016-04-11 Mon 21:03>
+SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -247,7 +247,7 @@ Presented in the clinical workflow without disruptive pop-ups.
 
 
 *** Interaction functions
-SCHEDULED: <2016-04-11 Mon 21:03>
+SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
 :PAGE: 2
 :END:
