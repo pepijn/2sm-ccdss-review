@@ -1,0 +1,264 @@
+* Common
+** Decision-support system
+SCHEDULED: <2016-04-14 Thu 17:43>
+:PROPERTIES:
+:PAGE: 0
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Rules represented as LISP expressions and an associated inference engine.
+#+END_EXAMPLE
+
+Reminder system for diesease management within existing EHR.
+
+
+** Trigger
+SCHEDULED: <2016-04-14 Thu 17:49>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Initiated by a user seeking advice (clinician).
+#+END_EXAMPLE
+
+User opens patient chart within EMR.
+
+
+* Clinical stream
+** Patient
+SCHEDULED: <2016-04-14 Thu 19:40>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Hospitalized patients with severe bacterial infections.
+- Demographics, allergies, background conditions (eg., compromised host?), etc.
+#+END_EXAMPLE
+
+Patients with overdue screening examinations or lack of appropriate medication.
+
+
+** Clinical knowledge
+SCHEDULED: <2016-04-14 Thu 17:47>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Clinical experts.
+- Bacterial identification and empirical antibiotic choice.
+#+END_EXAMPLE
+
+Five recommendations for diabetes care and four recommendations for coronary
+artery disease care from evidence-based guidelines.
+
+
+** Patient data
+SCHEDULED: <2016-04-14 Thu 17:50>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Gender, age, current diagnosis, vital signs, bacterial morphology, culture
+  site, etc.
+- Entered by user (not integrated with EHR).
+#+END_EXAMPLE
+
+Laboratory and radiology results, problem list, medication list, and allergy
+list within EMR.
+
+
+** Clinical conclusions
+SCHEDULED: <2016-04-14 Thu 19:52>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Identity of organism, underlying inferences, and degree of certainty.
+#+END_EXAMPLE
+
+Appropriate reminders.
+
+
+** Clinical advice
+SCHEDULED: <2016-04-14 Thu 19:51>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Whether to treat, choice of antibiotic(s), and strength of recommendation.
+#+END_EXAMPLE
+
+Whether to do diagnostic tests, choice of medicine (such as ACE inhibitor and
+LDL statin therapy), etc.
+
+
+* Cognitive-behavioral stream
+** User(s)
+SCHEDULED: <2016-04-14 Thu 19:45>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Clinician(s) requiring infectious disease consultation (expertise in other
+areas).
+#+END_EXAMPLE
+
+All primary care physicians in the integrated health care network.
+
+
+** Cognitive-behavioral knowledge
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Need to communicate in natural language; need for explanation of reasoning; need
+to manage and convey uncertainty.
+#+END_EXAMPLE
+
+*** #1
+SCHEDULED: <2016-04-14 Thu 19:55>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+Need to impact quality of care.
+
+*** #2
+SCHEDULED: <2016-04-14 Thu 19:56>
+:PROPERTIES:
+:PAGE: 2
+:END:
+
+Need to promote receipt of services that are widely accepted as the standard of
+care.
+
+
+** User data
+SCHEDULED: <2016-04-14 Thu 19:58>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Text input from user (eg, answering simple questions, entering data, user enters
+“why” or “how”).
+#+END_EXAMPLE
+
+Electronic problem list, laboratory results, medication use.
+
+
+** Cognitive-behavioral conclusions
+SCHEDULED: <2016-04-14 Thu 20:01>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+User wants advice, an explanation, or help.
+#+END_EXAMPLE
+
+User should note the information in the reminders and potentially take action
+accordingly.
+
+
+** Presentation
+*** Content
+SCHEDULED: <2016-04-14 Thu 17:58>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Conclusion and advice phrased in natural language
+#+END_EXAMPLE
+
+Reminders phrased in natural language.
+
+
+*** Timing
+SCHEDULED: <2016-04-14 Thu 17:53>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Immediate
+#+END_EXAMPLE
+
+Immediate.
+
+
+*** Channel
+SCHEDULED: <2016-04-14 Thu 17:54>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Stand-alone system
+#+END_EXAMPLE
+
+Within main patient screen within EMR.
+
+
+*** Format
+SCHEDULED: <2016-04-14 Thu 17:58>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Plain text
+#+END_EXAMPLE
+
+Plain text
+
+
+*** Notification
+SCHEDULED: <2016-04-14 Thu 20:01>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Direct display
+#+END_EXAMPLE
+
+Direct display.
+
+
+*** Interaction functions
+SCHEDULED: <2016-04-14 Thu 20:03>
+:PROPERTIES:
+:PAGE: 1
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+User may type “why” or “how” for explanation
+#+END_EXAMPLE
+
+No interaction possible.
+
+
