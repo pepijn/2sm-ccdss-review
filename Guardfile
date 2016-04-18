@@ -38,5 +38,10 @@ guard :shell do
     `chmod 600 sources/*.org`
     puts `python extract.py sources/#{filename}`
     `chmod 400 sources/*.org`
+    system 'python summarize.py sources/*.org'
+  end
+
+  watch('summarize.py') do
+    system 'python summarize.py sources/*.org'
   end
 end
