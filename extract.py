@@ -10,7 +10,8 @@ import re
 from PyOrgMode import PyOrgMode
 import textwrap
 import dateutil.parser
-from datetime import timedelta
+from datetime import timedelta, datetime
+from pprint import pprint
 
 # http://blog.hartwork.org/?p=612
 
@@ -56,11 +57,17 @@ for name, data in studies.iteritems():
                     if not content:
                         continue
 
-                    modified = dateutil.parser.parse(annot.get_modified()[2:-5])
+                    modified = annot.get_modified()[2:17]
+                    pprint(modified)
+                    modified = dateutil.parser.parse(modified)
                     modified += timedelta(hours=2)
                     value_nick = annot.get_annot_type().value_nick
 
+                    coordinates= dict(x=annot_mapping.area.x1,
+                                      y=annot_mapping.area.y1)
+
                     annotations.append(dict(content=content,
+                                            coordinates=coordinates,
                                             modified=modified,
                                             page=page.get_index()))
 
