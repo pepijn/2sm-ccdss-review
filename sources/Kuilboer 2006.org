@@ -2,7 +2,8 @@
 ** Decision-support system
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 0
+:PAGE: 1
+:COORDINATES: 557, 334
 :END:
 
 #+BEGIN_EXAMPLE
@@ -16,7 +17,8 @@ Non-inquisitive critiquing system integrated with the GPs' EMR.
 ** Trigger
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 0
+:PAGE: 1
+:COORDINATES: 374, 211
 :END:
 
 #+BEGIN_EXAMPLE
@@ -31,7 +33,8 @@ As soon as the user has recorded all data.
 ** Patient
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 207, 316
 :END:
 
 #+BEGIN_EXAMPLE
@@ -47,7 +50,8 @@ their EMR.
 ** Clinical knowledge
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 20, 539
 :END:
 
 #+BEGIN_EXAMPLE
@@ -62,7 +66,8 @@ Asthma and COPD guidelines. System is built under guidance of clinical experts.
 ** Patient data
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 0
+:PAGE: 1
+:COORDINATES: 388, 135
 :END:
 
 #+BEGIN_EXAMPLE
@@ -79,7 +84,8 @@ EHR.
 ** Clinical conclusions
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 0
+:PAGE: 1
+:COORDINATES: 373, 234
 :END:
 
 #+BEGIN_EXAMPLE
@@ -93,7 +99,8 @@ Whether patient has asthma or COPD and reviews treatment.
 ** Clinical advice
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 389, 672
 :END:
 
 #+BEGIN_EXAMPLE
@@ -108,7 +115,8 @@ Patient-specific comments and calculations on measurements.
 ** User(s)
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 19, 365
 :END:
 
 #+BEGIN_EXAMPLE
@@ -123,7 +131,8 @@ GPs that use an EMR.
 ** Cognitive-behavioral knowledge
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 0
+:PAGE: 1
+:COORDINATES: 210, 217
 :END:
 
 #+BEGIN_EXAMPLE
@@ -139,7 +148,8 @@ reasoning.
 ** User data
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 388, 596
 :END:
 
 #+BEGIN_EXAMPLE
@@ -154,7 +164,8 @@ User is able to request more information about the critique.
 ** Cognitive-behavioral conclusions
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 38, 585
 :END:
 
 #+BEGIN_EXAMPLE
@@ -169,7 +180,8 @@ User should reconsider his options.
 *** Content
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 292, 360
 :END:
 
 #+BEGIN_EXAMPLE
@@ -183,7 +195,8 @@ Comment and advice phrased in natural language.
 *** Timing
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 0
+:PAGE: 1
+:COORDINATES: 377, 190
 :END:
 
 #+BEGIN_EXAMPLE
@@ -197,7 +210,8 @@ Immediate.
 *** Channel
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 187, 684
 :END:
 
 #+BEGIN_EXAMPLE
@@ -211,7 +225,8 @@ Part of medical-record system.
 *** Format
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 143, 358
 :END:
 
 #+BEGIN_EXAMPLE
@@ -225,7 +240,8 @@ Plain text.
 *** Notification
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 31, 653
 :END:
 
 #+BEGIN_EXAMPLE
@@ -246,7 +262,8 @@ User may type “why” or “how” for explanation
 **** #1
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 26, 603
 :END:
 
 User can interrupt the CCDSS analysis.
@@ -254,7 +271,8 @@ User can interrupt the CCDSS analysis.
 **** #2
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 146, 36
 :END:
 
 User can request (additional) information for each comment.

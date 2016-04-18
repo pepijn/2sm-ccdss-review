@@ -2,7 +2,8 @@
 ** Decision-support system
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 23, 272
 :END:
 
 #+BEGIN_EXAMPLE
@@ -16,7 +17,8 @@ Rule based reminder system.
 ** Trigger
 SCHEDULED: <2016-04-13 Wed 23:15>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 62, 440
 :END:
 
 #+BEGIN_EXAMPLE
@@ -31,7 +33,8 @@ A user enters an order.
 ** Patient
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 0
+:PAGE: 1
+:COORDINATES: 388, 185
 :END:
 
 #+BEGIN_EXAMPLE
@@ -54,7 +57,8 @@ MYCIN example:
 *** #1
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 62, 335
 :END:
 
 National guidelines regarding the use of 5 therapies.
@@ -62,7 +66,8 @@ National guidelines regarding the use of 5 therapies.
 *** #2
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 61, 287
 :END:
 
 Influenza seasonality.
@@ -80,7 +85,8 @@ MYCIN example:
 *** #1
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 62, 195
 :END:
 
 Routinely collected data such demographic characteristics, lists of medical
@@ -89,7 +95,8 @@ problems etc.
 *** #2
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 62, 167
 :END:
 
 Information from vaccination status by standard admission questionnaire.
@@ -98,7 +105,8 @@ Information from vaccination status by standard admission questionnaire.
 ** Clinical conclusions
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 261, 613
 :END:
 
 #+BEGIN_EXAMPLE
@@ -113,7 +121,8 @@ argumentation.
 ** Clinical advice
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 299, 402
 :END:
 
 #+BEGIN_EXAMPLE
@@ -129,7 +138,8 @@ acceptance or rejection.
 ** User(s)
 SCHEDULED: <2016-04-13 Wed 23:15>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 39, 483
 :END:
 
 #+BEGIN_EXAMPLE
@@ -145,7 +155,8 @@ all orders.
 ** Cognitive-behavioral knowledge
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 148, 581
 :END:
 
 #+BEGIN_EXAMPLE
@@ -161,7 +172,8 @@ to specify order.
 ** User data
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 299, 473
 :END:
 
 #+BEGIN_EXAMPLE
@@ -176,7 +188,8 @@ A user either accepts or rejects a recommendation.
 ** Cognitive-behavioral conclusions
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 364, 520
 :END:
 
 #+BEGIN_EXAMPLE
@@ -191,7 +204,8 @@ User should order preventitive care for patient.
 *** Content
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 198, 527
 :END:
 
 #+BEGIN_EXAMPLE
@@ -205,7 +219,8 @@ Recommendations phrased in natural language.
 *** Timing
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 60, 133
 :END:
 
 #+BEGIN_EXAMPLE
@@ -220,7 +235,8 @@ user.
 *** Channel
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 54, 471
 :END:
 
 #+BEGIN_EXAMPLE
@@ -234,7 +250,8 @@ Integrated into order-entry program.
 *** Format
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 298, 516
 :END:
 
 #+BEGIN_EXAMPLE
@@ -248,7 +265,8 @@ Plain text.
 *** Notification
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 306, 646
 :END:
 
 #+BEGIN_EXAMPLE
@@ -262,7 +280,8 @@ User receives reminder after neglecting the first opportunity.
 *** Interaction functions
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 145, 649
 :END:
 
 #+BEGIN_EXAMPLE

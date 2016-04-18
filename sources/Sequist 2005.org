@@ -2,7 +2,8 @@
 ** Decision-support system
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 0
+:PAGE: 1
+:COORDINATES: 543, 43
 :END:
 
 #+BEGIN_EXAMPLE
@@ -16,7 +17,8 @@ Reminder system for diesease management within existing EHR.
 ** Trigger
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 287, 538
 :END:
 
 #+BEGIN_EXAMPLE
@@ -31,7 +33,8 @@ User opens patient chart within EMR.
 ** Patient
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 20, 589
 :END:
 
 #+BEGIN_EXAMPLE
@@ -46,7 +49,8 @@ Patients with overdue screening examinations or lack of appropriate medication.
 ** Clinical knowledge
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 25, 392
 :END:
 
 #+BEGIN_EXAMPLE
@@ -62,7 +66,8 @@ artery disease care from evidence-based guidelines.
 ** Patient data
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 285, 488
 :END:
 
 #+BEGIN_EXAMPLE
@@ -79,7 +84,8 @@ list within EMR.
 ** Clinical conclusions
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 283, 472
 :END:
 
 #+BEGIN_EXAMPLE
@@ -93,7 +99,8 @@ Appropriate reminders.
 ** Clinical advice
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 33, 354
 :END:
 
 #+BEGIN_EXAMPLE
@@ -109,7 +116,8 @@ LDL statin therapy), etc.
 ** User(s)
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 18, 518
 :END:
 
 #+BEGIN_EXAMPLE
@@ -132,7 +140,8 @@ to manage and convey uncertainty.
 *** #1
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 280, 701
 :END:
 
 Need to impact quality of care.
@@ -140,7 +149,8 @@ Need to impact quality of care.
 *** #2
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 20, 500
 :END:
 
 Need to promote receipt of services that are widely accepted as the standard of
@@ -150,7 +160,8 @@ care.
 ** User data
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 282, 621
 :END:
 
 #+BEGIN_EXAMPLE
@@ -165,7 +176,8 @@ Electronic problem list, laboratory results, medication use.
 ** Cognitive-behavioral conclusions
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 205, 36
 :END:
 
 #+BEGIN_EXAMPLE
@@ -181,7 +193,8 @@ accordingly.
 *** Content
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 41, 96
 :END:
 
 #+BEGIN_EXAMPLE
@@ -195,7 +208,8 @@ Reminders phrased in natural language.
 *** Timing
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 284, 455
 :END:
 
 #+BEGIN_EXAMPLE
@@ -209,7 +223,8 @@ Immediate.
 *** Channel
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 284, 439
 :END:
 
 #+BEGIN_EXAMPLE
@@ -223,7 +238,8 @@ Within main patient screen within EMR.
 *** Format
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 35, 132
 :END:
 
 #+BEGIN_EXAMPLE
@@ -237,7 +253,8 @@ Plain text
 *** Notification
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 101, 107
 :END:
 
 #+BEGIN_EXAMPLE
@@ -251,7 +268,8 @@ Direct display.
 *** Interaction functions
 SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 401, 79
 :END:
 
 #+BEGIN_EXAMPLE

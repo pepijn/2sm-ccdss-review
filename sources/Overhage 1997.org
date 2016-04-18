@@ -2,7 +2,8 @@
 ** Decision-support system
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 300, 431
 :END:
 
 #+BEGIN_EXAMPLE
@@ -16,7 +17,8 @@ Rule based reminder program.
 ** Trigger
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 28, 25
 :END:
 
 #+BEGIN_EXAMPLE
@@ -31,7 +33,8 @@ User enters a 'trigger' order.
 ** Patient
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 10
+:PAGE: 11
+:COORDINATES: 286, 501
 :END:
 
 #+BEGIN_EXAMPLE
@@ -54,7 +57,8 @@ MYCIN example:
 *** #1
 SCHEDULED: <2016-04-14 Thu 21:13>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 294, 159
 :END:
 
 Standard reference texts, drug package inserts.
@@ -62,7 +66,8 @@ Standard reference texts, drug package inserts.
 *** #2
 SCHEDULED: <2016-04-14 Thu 21:13>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 291, 27
 :END:
 
 Drug utilization review criteria developed independtly by clinical experts.
@@ -71,7 +76,8 @@ Drug utilization review criteria developed independtly by clinical experts.
 ** Patient data
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 289, 108
 :END:
 
 #+BEGIN_EXAMPLE
@@ -91,7 +97,8 @@ prescriptions
 ** Clinical conclusions
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 293, 404
 :END:
 
 #+BEGIN_EXAMPLE
@@ -105,7 +112,8 @@ Appropriate corollary orders.
 ** Clinical advice
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 295, 502
 :END:
 
 #+BEGIN_EXAMPLE
@@ -120,7 +128,8 @@ Order recommendations with reasoning and dose
 ** User(s)
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 32, 58
 :END:
 
 #+BEGIN_EXAMPLE
@@ -135,7 +144,8 @@ Medicine physicians that place orders.
 ** Cognitive-behavioral knowledge
 SCHEDULED: <2016-04-14 Thu 21:13>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 289, 624
 :END:
 
 #+BEGIN_EXAMPLE
@@ -150,7 +160,8 @@ Need to reduce order omissions errors during inpatient stays.
 ** User data
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 293, 334
 :END:
 
 #+BEGIN_EXAMPLE
@@ -165,7 +176,8 @@ Acceptance, rejection or modification per recommended order.
 ** Cognitive-behavioral conclusions
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 293, 281
 :END:
 
 #+BEGIN_EXAMPLE
@@ -180,7 +192,8 @@ User should respond to the recommendations.
 *** Content
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 241, 547
 :END:
 
 #+BEGIN_EXAMPLE
@@ -194,7 +207,8 @@ Recommendations phrased in natural language.
 *** Timing
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 292, 365
 :END:
 
 #+BEGIN_EXAMPLE
@@ -208,7 +222,8 @@ Immediate.
 *** Channel
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 15, 43
 :END:
 
 #+BEGIN_EXAMPLE
@@ -222,7 +237,8 @@ Integrated into computer order entry system.
 *** Format
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 420, 510
 :END:
 
 #+BEGIN_EXAMPLE
@@ -236,7 +252,8 @@ Plain text
 *** Notification
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 292, 385
 :END:
 
 #+BEGIN_EXAMPLE
@@ -250,7 +267,8 @@ Direct display.
 *** Interaction functions
 SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 169, 534
 :END:
 
 #+BEGIN_EXAMPLE

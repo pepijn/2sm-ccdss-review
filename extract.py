@@ -68,7 +68,7 @@ for name, data in studies.iteritems():
                     annotations.append(dict(content=content,
                                             coordinates=coordinates,
                                             modified=modified,
-                                            page=page.get_index()))
+                                            page=page.get_index() + 1))
 
     for annotation in annotations:
         parts = string.split(annotation.pop('content'), ':', 1)
@@ -104,11 +104,16 @@ for name, study in studies.iteritems():
             root.content = []
 
             if len(annotations) == 1:
+                annotation = annotations[0]
+                coordinates = str(int(annotation['coordinates']['x']))
+                coordinates += ', '
+                coordinates += str(int(annotation['coordinates']['y']))
                 _sched = PyOrgMode.OrgSchedule()
-                _sched._append(root, _sched.Element(scheduled=annotations[0]['modified'].strftime('<%Y-%m-%d %a %H:%M>')))
+                _sched._append(root, _sched.Element(scheduled=annotation['modified'].strftime('<%Y-%m-%d %a %H:%M>')))
                 _props = PyOrgMode.OrgDrawer.Element("PROPERTIES")
                 # Add a properties drawer
-                _props.append(PyOrgMode.OrgDrawer.Property("PAGE", str(annotations[0]['page'])))
+                _props.append(PyOrgMode.OrgDrawer.Property("PAGE", str(annotation['page'])))
+                _props.append(PyOrgMode.OrgDrawer.Property("COORDINATES", coordinates))
                 # Append the properties to the new todo item
                 root.append_clean(_props)
 
@@ -125,12 +130,17 @@ for name, study in studies.iteritems():
             if len(annotations) > 1:
                 for index, annotation in enumerate(annotations):
                     el = PyOrgMode.OrgNode.Element()
+                    coordinates = str(int(annotation['coordinates']['x']))
+                    coordinates += ', '
+                    coordinates += str(int(annotation['coordinates']['y']))
                     el.heading = "#%d" % (index + 1)
                     _sched = PyOrgMode.OrgSchedule()
                     _sched._append(el, _sched.Element(scheduled=annotation['modified'].strftime('<%Y-%m-%d %a %H:%M>')))
                     _props = PyOrgMode.OrgDrawer.Element("PROPERTIES")
                     # Add a properties drawer
                     _props.append(PyOrgMode.OrgDrawer.Property("PAGE", str(annotation['page'])))
+                    _props.append(PyOrgMode.OrgDrawer.Property("COORDINATES", coordinates))
+
                     # Append the properties to the new todo item
                     el.append_clean(_props)
                     el.append_clean('\n')

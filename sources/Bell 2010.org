@@ -2,7 +2,8 @@
 ** Decision-support system
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 7, 541
 :END:
 
 #+BEGIN_EXAMPLE
@@ -16,7 +17,8 @@ Externally described decision support framework.
 ** Trigger
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 13, 688
 :END:
 
 #+BEGIN_EXAMPLE
@@ -31,7 +33,8 @@ Alerts and reminders in the EHR guide the clinician to the CDSS.
 ** Patient
 SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 202, 320
 :END:
 
 #+BEGIN_EXAMPLE
@@ -47,7 +50,8 @@ chronic-problem lists or visit diagnoses.
 ** Clinical knowledge
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 7, 598
 :END:
 
 #+BEGIN_EXAMPLE
@@ -62,7 +66,8 @@ Asthma severity classification guidelines (NAEPP).
 ** Patient data
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 315, 456
 :END:
 
 #+BEGIN_EXAMPLE
@@ -92,7 +97,8 @@ Whether to treat, choice of antibiotic(s), and strength of recommendation.
 *** #1
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 187, 482
 :END:
 
 The CCDSS tool suggests an asthma severity classification.
@@ -100,7 +106,8 @@ The CCDSS tool suggests an asthma severity classification.
 *** #2
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 131, 204
 :END:
 
 The CCDSS presents whether the asthma is under control or not. (Ik denk dat ik
@@ -112,7 +119,8 @@ Kunnen jullie mij vertellen wat de grenzen ongeveer zijn?)
 ** User(s)
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 187, 678
 :END:
 
 #+BEGIN_EXAMPLE
@@ -127,7 +135,8 @@ Clinicians at practices with experience using an ambulatory EHR.
 ** Cognitive-behavioral knowledge
 SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
-:PAGE: 0
+:PAGE: 1
+:COORDINATES: 10, 372
 :END:
 
 #+BEGIN_EXAMPLE
@@ -150,7 +159,8 @@ Text input from user (eg, answering simple questions, entering data, user enters
 *** #1
 SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 7, 634
 :END:
 
 Information in the data-entry tool for capturing asthma symptom frequency and
@@ -159,7 +169,8 @@ diagnosis and medication history.
 *** #2
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 187, 460
 :END:
 
 The clinician is prompted to enter an asthma severity classification if none is
@@ -169,7 +180,8 @@ on file.
 ** Cognitive-behavioral conclusions
 SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 10, 665
 :END:
 
 #+BEGIN_EXAMPLE
@@ -184,7 +196,8 @@ User needs to be reminded of guideline based recommendations.
 *** Content
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 250, 163
 :END:
 
 #+BEGIN_EXAMPLE
@@ -206,7 +219,8 @@ Immediate
 *** Channel
 SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
-:PAGE: 1
+:PAGE: 2
+:COORDINATES: 92, 336
 :END:
 
 #+BEGIN_EXAMPLE
@@ -220,7 +234,8 @@ Embedded in EHR system.
 *** Format
 SCHEDULED: <2016-04-13 Wed 23:05>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 28, 147
 :END:
 
 #+BEGIN_EXAMPLE
@@ -235,7 +250,8 @@ namelijk niet in dit artikel beschreven.)
 *** Notification
 SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 5, 518
 :END:
 
 #+BEGIN_EXAMPLE
@@ -249,7 +265,8 @@ Presented in the clinical workflow without disruptive pop-ups.
 *** Interaction functions
 SCHEDULED: <2016-04-11 Mon 23:03>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 259, 454
 :END:
 
 #+BEGIN_EXAMPLE

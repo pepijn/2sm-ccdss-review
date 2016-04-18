@@ -2,7 +2,8 @@
 ** Decision-support system
 SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 395, 343
 :END:
 
 #+BEGIN_EXAMPLE
@@ -24,7 +25,8 @@ Initiated by a user seeking advice (clinician).
 ** Patient
 SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 362, 427
 :END:
 
 #+BEGIN_EXAMPLE
@@ -39,7 +41,8 @@ Patient from asthma register of GP.
 ** Clinical knowledge
 SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 395, 147
 :END:
 
 #+BEGIN_EXAMPLE
@@ -78,7 +81,8 @@ Whether to treat, choice of antibiotic(s), and strength of recommendation.
 *** #1
 SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
-:PAGE: 6
+:PAGE: 7
+:COORDINATES: 395, 618
 :END:
 
 Management recommendations and reminders.
@@ -86,7 +90,8 @@ Management recommendations and reminders.
 *** #2
 SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
-:PAGE: 6
+:PAGE: 7
+:COORDINATES: 395, 571
 :END:
 
 Risk prediction.
@@ -96,7 +101,8 @@ Risk prediction.
 ** User(s)
 SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
-:PAGE: 3
+:PAGE: 4
+:COORDINATES: 395, 546
 :END:
 
 #+BEGIN_EXAMPLE
@@ -113,7 +119,8 @@ press.
 ** Cognitive-behavioral knowledge
 SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 395, 439
 :END:
 
 #+BEGIN_EXAMPLE
@@ -129,7 +136,8 @@ certain triggers.
 ** User data
 SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 395, 224
 :END:
 
 #+BEGIN_EXAMPLE
@@ -152,7 +160,8 @@ User wants advice, an explanation, or help.
 *** Content
 SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 395, 164
 :END:
 
 #+BEGIN_EXAMPLE
@@ -173,7 +182,8 @@ Immediate
 *** Channel
 SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
-:PAGE: 9
+:PAGE: 10
+:COORDINATES: 395, 415
 :END:
 
 #+BEGIN_EXAMPLE
@@ -187,7 +197,8 @@ Stand-alone system.
 *** Format
 SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
-:PAGE: 2
+:PAGE: 3
+:COORDINATES: 398, 73
 :END:
 
 #+BEGIN_EXAMPLE

@@ -30,11 +30,13 @@ guard :shell do
     `pdflatex #{decrypted}`
   end
 
-  watch(%r{articles/(.*).pdf}) do |path, _|
+  watch(%r{articles/(.*\.pdf)}) do |path, filename|
+    path = Pathname path
+    next unless path.exist?
     puts path
     `mv "#{path}" sources`
     `chmod 600 sources/*.org`
-    puts `python extract.py sources/*.pdf`
+    puts `python extract.py sources/#{filename}`
     `chmod 400 sources/*.org`
   end
 end
