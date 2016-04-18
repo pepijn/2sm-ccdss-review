@@ -58,7 +58,6 @@ for name, data in studies.iteritems():
                         continue
 
                     modified = annot.get_modified()[2:17]
-                    pprint(modified)
                     modified = dateutil.parser.parse(modified)
                     modified += timedelta(hours=2)
                     value_nick = annot.get_annot_type().value_nick

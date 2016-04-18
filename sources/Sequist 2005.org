@@ -1,6 +1,6 @@
 * Common
 ** Decision-support system
-SCHEDULED: <2016-04-14 Thu 17:43>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -14,7 +14,7 @@ Reminder system for diesease management within existing EHR.
 
 
 ** Trigger
-SCHEDULED: <2016-04-14 Thu 17:49>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -29,7 +29,7 @@ User opens patient chart within EMR.
 
 * Clinical stream
 ** Patient
-SCHEDULED: <2016-04-14 Thu 19:40>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -44,7 +44,7 @@ Patients with overdue screening examinations or lack of appropriate medication.
 
 
 ** Clinical knowledge
-SCHEDULED: <2016-04-14 Thu 17:47>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -60,7 +60,7 @@ artery disease care from evidence-based guidelines.
 
 
 ** Patient data
-SCHEDULED: <2016-04-14 Thu 17:50>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -77,7 +77,7 @@ list within EMR.
 
 
 ** Clinical conclusions
-SCHEDULED: <2016-04-14 Thu 19:52>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -91,7 +91,7 @@ Appropriate reminders.
 
 
 ** Clinical advice
-SCHEDULED: <2016-04-14 Thu 19:51>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -107,7 +107,7 @@ LDL statin therapy), etc.
 
 * Cognitive-behavioral stream
 ** User(s)
-SCHEDULED: <2016-04-14 Thu 19:45>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -130,7 +130,7 @@ to manage and convey uncertainty.
 #+END_EXAMPLE
 
 *** #1
-SCHEDULED: <2016-04-14 Thu 19:55>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -138,7 +138,7 @@ SCHEDULED: <2016-04-14 Thu 19:55>
 Need to impact quality of care.
 
 *** #2
-SCHEDULED: <2016-04-14 Thu 19:56>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -148,7 +148,7 @@ care.
 
 
 ** User data
-SCHEDULED: <2016-04-14 Thu 19:58>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -163,7 +163,7 @@ Electronic problem list, laboratory results, medication use.
 
 
 ** Cognitive-behavioral conclusions
-SCHEDULED: <2016-04-14 Thu 20:01>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -179,7 +179,7 @@ accordingly.
 
 ** Presentation
 *** Content
-SCHEDULED: <2016-04-14 Thu 17:58>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -193,7 +193,7 @@ Reminders phrased in natural language.
 
 
 *** Timing
-SCHEDULED: <2016-04-14 Thu 17:53>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -207,7 +207,7 @@ Immediate.
 
 
 *** Channel
-SCHEDULED: <2016-04-14 Thu 17:54>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -221,7 +221,7 @@ Within main patient screen within EMR.
 
 
 *** Format
-SCHEDULED: <2016-04-14 Thu 17:58>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -235,7 +235,7 @@ Plain text
 
 
 *** Notification
-SCHEDULED: <2016-04-14 Thu 20:01>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -249,7 +249,7 @@ Direct display.
 
 
 *** Interaction functions
-SCHEDULED: <2016-04-14 Thu 20:03>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:

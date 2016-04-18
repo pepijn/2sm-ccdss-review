@@ -1,6 +1,6 @@
 * Common
 ** Decision-support system
-SCHEDULED: <2016-04-18 Mon 16:08>
+SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -22,7 +22,7 @@ Initiated by a user seeking advice (clinician).
 
 * Clinical stream
 ** Patient
-SCHEDULED: <2016-04-18 Mon 15:55>
+SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -37,7 +37,7 @@ Patient from asthma register of GP.
 
 
 ** Clinical knowledge
-SCHEDULED: <2016-04-18 Mon 15:56>
+SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -76,7 +76,7 @@ Whether to treat, choice of antibiotic(s), and strength of recommendation.
 #+END_EXAMPLE
 
 *** #1
-SCHEDULED: <2016-04-18 Mon 16:29>
+SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
 :PAGE: 6
 :END:
@@ -84,7 +84,7 @@ SCHEDULED: <2016-04-18 Mon 16:29>
 Management recommendations and reminders.
 
 *** #2
-SCHEDULED: <2016-04-18 Mon 16:30>
+SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
 :PAGE: 6
 :END:
@@ -94,7 +94,7 @@ Risk prediction.
 
 * Cognitive-behavioral stream
 ** User(s)
-SCHEDULED: <2016-04-18 Mon 15:55>
+SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -111,7 +111,7 @@ press.
 
 
 ** Cognitive-behavioral knowledge
-SCHEDULED: <2016-04-18 Mon 16:22>
+SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -127,7 +127,7 @@ certain triggers.
 
 
 ** User data
-SCHEDULED: <2016-04-18 Mon 16:27>
+SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -150,7 +150,7 @@ User wants advice, an explanation, or help.
 
 ** Presentation
 *** Content
-SCHEDULED: <2016-04-18 Mon 16:11>
+SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -171,7 +171,7 @@ Immediate
 #+END_EXAMPLE
 
 *** Channel
-SCHEDULED: <2016-04-18 Mon 16:18>
+SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
 :PAGE: 9
 :END:
@@ -185,7 +185,7 @@ Stand-alone system.
 
 
 *** Format
-SCHEDULED: <2016-04-18 Mon 16:17>
+SCHEDULED: <2016-04-18 Mon 16:32>
 :PROPERTIES:
 :PAGE: 2
 :END:

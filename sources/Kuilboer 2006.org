@@ -1,6 +1,6 @@
 * Common
 ** Decision-support system
-SCHEDULED: <2016-04-15 Fri 09:26>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -14,7 +14,7 @@ Non-inquisitive critiquing system integrated with the GPs' EMR.
 
 
 ** Trigger
-SCHEDULED: <2016-04-14 Thu 16:36>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -29,7 +29,7 @@ As soon as the user has recorded all data.
 
 * Clinical stream
 ** Patient
-SCHEDULED: <2016-04-14 Thu 16:40>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -45,7 +45,7 @@ their EMR.
 
 
 ** Clinical knowledge
-SCHEDULED: <2016-04-14 Thu 16:42>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -60,7 +60,7 @@ Asthma and COPD guidelines. System is built under guidance of clinical experts.
 
 
 ** Patient data
-SCHEDULED: <2016-04-14 Thu 16:28>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -77,7 +77,7 @@ EHR.
 
 
 ** Clinical conclusions
-SCHEDULED: <2016-04-15 Fri 09:26>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -91,7 +91,7 @@ Whether patient has asthma or COPD and reviews treatment.
 
 
 ** Clinical advice
-SCHEDULED: <2016-04-14 Thu 16:33>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -106,7 +106,7 @@ Patient-specific comments and calculations on measurements.
 
 * Cognitive-behavioral stream
 ** User(s)
-SCHEDULED: <2016-04-14 Thu 16:38>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -121,7 +121,7 @@ GPs that use an EMR.
 
 
 ** Cognitive-behavioral knowledge
-SCHEDULED: <2016-04-14 Thu 17:04>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -137,7 +137,7 @@ reasoning.
 
 
 ** User data
-SCHEDULED: <2016-04-14 Thu 16:50>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -152,7 +152,7 @@ User is able to request more information about the critique.
 
 
 ** Cognitive-behavioral conclusions
-SCHEDULED: <2016-04-14 Thu 17:10>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -167,7 +167,7 @@ User should reconsider his options.
 
 ** Presentation
 *** Content
-SCHEDULED: <2016-04-14 Thu 16:46>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -181,7 +181,7 @@ Comment and advice phrased in natural language.
 
 
 *** Timing
-SCHEDULED: <2016-04-14 Thu 16:47>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -195,7 +195,7 @@ Immediate.
 
 
 *** Channel
-SCHEDULED: <2016-04-14 Thu 16:29>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -209,7 +209,7 @@ Part of medical-record system.
 
 
 *** Format
-SCHEDULED: <2016-04-14 Thu 16:34>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -223,7 +223,7 @@ Plain text.
 
 
 *** Notification
-SCHEDULED: <2016-04-14 Thu 16:37>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -244,7 +244,7 @@ User may type “why” or “how” for explanation
 #+END_EXAMPLE
 
 **** #1
-SCHEDULED: <2016-04-14 Thu 16:31>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -252,7 +252,7 @@ SCHEDULED: <2016-04-14 Thu 16:31>
 User can interrupt the CCDSS analysis.
 
 **** #2
-SCHEDULED: <2016-04-14 Thu 16:44>
+SCHEDULED: <2016-04-14 Thu 20:20>
 :PROPERTIES:
 :PAGE: 1
 :END:

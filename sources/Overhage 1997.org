@@ -1,6 +1,6 @@
 * Common
 ** Decision-support system
-SCHEDULED: <2016-04-14 Thu 21:14>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -14,7 +14,7 @@ Rule based reminder program.
 
 
 ** Trigger
-SCHEDULED: <2016-04-14 Thu 21:17>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -29,7 +29,7 @@ User enters a 'trigger' order.
 
 * Clinical stream
 ** Patient
-SCHEDULED: <2016-04-14 Thu 21:23>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 10
 :END:
@@ -52,7 +52,7 @@ MYCIN example:
 #+END_EXAMPLE
 
 *** #1
-SCHEDULED: <2016-04-14 Thu 21:12>
+SCHEDULED: <2016-04-14 Thu 21:13>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -69,7 +69,7 @@ Drug utilization review criteria developed independtly by clinical experts.
 
 
 ** Patient data
-SCHEDULED: <2016-04-14 Thu 21:19>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -89,7 +89,7 @@ prescriptions
 
 
 ** Clinical conclusions
-SCHEDULED: <2016-04-14 Thu 21:32>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -103,7 +103,7 @@ Appropriate corollary orders.
 
 
 ** Clinical advice
-SCHEDULED: <2016-04-14 Thu 21:32>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -118,7 +118,7 @@ Order recommendations with reasoning and dose
 
 * Cognitive-behavioral stream
 ** User(s)
-SCHEDULED: <2016-04-14 Thu 21:25>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -133,7 +133,7 @@ Medicine physicians that place orders.
 
 
 ** Cognitive-behavioral knowledge
-SCHEDULED: <2016-04-14 Thu 21:04>
+SCHEDULED: <2016-04-14 Thu 21:13>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -148,7 +148,7 @@ Need to reduce order omissions errors during inpatient stays.
 
 
 ** User data
-SCHEDULED: <2016-04-14 Thu 21:15>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -163,7 +163,7 @@ Acceptance, rejection or modification per recommended order.
 
 
 ** Cognitive-behavioral conclusions
-SCHEDULED: <2016-04-14 Thu 21:38>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -178,7 +178,7 @@ User should respond to the recommendations.
 
 ** Presentation
 *** Content
-SCHEDULED: <2016-04-14 Thu 21:33>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -192,7 +192,7 @@ Recommendations phrased in natural language.
 
 
 *** Timing
-SCHEDULED: <2016-04-14 Thu 21:33>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -206,7 +206,7 @@ Immediate.
 
 
 *** Channel
-SCHEDULED: <2016-04-14 Thu 21:35>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -220,7 +220,7 @@ Integrated into computer order entry system.
 
 
 *** Format
-SCHEDULED: <2016-04-14 Thu 21:36>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -234,7 +234,7 @@ Plain text
 
 
 *** Notification
-SCHEDULED: <2016-04-14 Thu 21:36>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:
@@ -248,7 +248,7 @@ Direct display.
 
 
 *** Interaction functions
-SCHEDULED: <2016-04-14 Thu 21:16>
+SCHEDULED: <2016-04-14 Thu 21:39>
 :PROPERTIES:
 :PAGE: 3
 :END:

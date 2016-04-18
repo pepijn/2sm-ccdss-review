@@ -1,6 +1,6 @@
 * Common
 ** Decision-support system
-SCHEDULED: <2016-04-14 Thu 14:29>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -14,7 +14,7 @@ N/A
 
 
 ** Trigger
-SCHEDULED: <2016-04-14 Thu 14:28>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -29,7 +29,7 @@ N/A
 
 * Clinical stream
 ** Patient
-SCHEDULED: <2016-04-14 Thu 14:07>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -44,7 +44,7 @@ Women undergoing ovarian stimulation to treat infertility.
 
 
 ** Clinical knowledge
-SCHEDULED: <2016-04-14 Thu 13:54>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -68,7 +68,7 @@ MYCIN example:
 #+END_EXAMPLE
 
 *** #1
-SCHEDULED: <2016-04-14 Thu 14:17>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -77,7 +77,7 @@ Regimen used, hormone levels, pelvic ultrasonography results, results of
 previous cycles, protocol used.
 
 *** #2
-SCHEDULED: <2016-04-14 Thu 14:18>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -86,7 +86,7 @@ Patient age, number of treated cycles, cause of infertility.
 
 
 ** Clinical conclusions
-SCHEDULED: <2016-04-14 Thu 14:14>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -100,7 +100,7 @@ Classification of patient ovaries FSH simulation response
 
 
 ** Clinical advice
-SCHEDULED: <2016-04-14 Thu 14:18>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -115,7 +115,7 @@ Drug management
 
 * Cognitive-behavioral stream
 ** User(s)
-SCHEDULED: <2016-04-14 Thu 14:25>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -130,7 +130,7 @@ N/A, only the performers of the therapy are mentioned.
 
 
 ** Cognitive-behavioral knowledge
-SCHEDULED: <2016-04-14 Thu 14:40>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -145,7 +145,7 @@ Need for expertise regarding FSH use; need to carefully monitor therapy.
 
 
 ** User data
-SCHEDULED: <2016-04-14 Thu 14:20>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -160,7 +160,7 @@ Text input from user regarding therapy results
 
 
 ** Cognitive-behavioral conclusions
-SCHEDULED: <2016-04-14 Thu 15:11>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 2
 :END:
@@ -175,7 +175,7 @@ N/A
 
 ** Presentation
 *** Content
-SCHEDULED: <2016-04-14 Thu 14:44>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -190,7 +190,7 @@ ovarian stimulation, end of cycle data, and statistical data.
 
 
 *** Timing
-SCHEDULED: <2016-04-14 Thu 14:45>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -205,7 +205,7 @@ user.
 
 
 *** Channel
-SCHEDULED: <2016-04-14 Thu 14:46>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -219,7 +219,7 @@ N/A
 
 
 *** Format
-SCHEDULED: <2016-04-14 Thu 14:46>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 0
 :END:
@@ -233,7 +233,7 @@ N/A
 
 
 *** Notification
-SCHEDULED: <2016-04-14 Thu 14:46>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 1
 :END:
@@ -248,7 +248,7 @@ user.
 
 
 *** Interaction functions
-SCHEDULED: <2016-04-14 Thu 15:09>
+SCHEDULED: <2016-04-14 Thu 15:32>
 :PROPERTIES:
 :PAGE: 1
 :END:
