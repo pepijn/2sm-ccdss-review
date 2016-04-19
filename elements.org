@@ -1,0 +1,78 @@
+* Common
+** Decision-support system
+Knowledge representation and reasoning mechanisms to be used.
+
+** Trigger
+Data or interaction that triggers the system to begin processing.
+
+** Organizational/Environmental factors
+Factors that affect the implementation or adoption of decision support systems
+in general, such as the 'Meaningful Use' plan.
+
+** Study factors
+Factors that affect the outcome of the study but do not reflect on the decision
+support system itself, such as poor study power or contamination of the control
+group)
+
+** Empirical measures
+Measured usage, usability, etc.
+
+* Clinical stream
+** Patient
+- Patient population.
+- Relevant attributes (chief complaint, history of present illness, problem
+  list, preferences, wish to be involved in decisions, etc.)
+
+** Clinical knowledge
+Source(s) and types of clinical knowledge required.
+
+** Patient data
+Data elements:
+- Sources and types of data elements.
+- Interpretation/action if data element is missing.
+
+** Clinical conclusions
+Types of conclusions the system can draw.
+
+** Clinical advice
+Types and wording of advice the system can present.
+
+* Cognitive-behavioral stream
+** User(s)
+- Role (patient, patientþdoctor, junior doctor, specialist, etc.).
+- Setting (home, ward, ICU, etc.).
+- Clinical workflow (clinical activity and tasks).
+- Cognitive workflow (sequence of data capture and reasoning).
+
+** Cognitive-behavioral knowledge
+- Anticipated usage/workflow.
+- Theory/strategy for support (expected utility, prospect theory, behavior
+  change, etc.)
+
+** User data
+- Static data (eg, role, supervisor, preferences)
+- Dynamic data (mouse clicks, response to previous alerts, etc.).
+
+** Cognitive-behavioral conclusions
+Conclusions that the system can draw about the user.
+
+** Presentation
+How advice/output is presented to the user, in terms of:
+
+*** Content
+Content (eg, framing)
+
+*** Timing
+Timing
+
+*** Channel
+Channel
+
+*** Format
+Format
+
+*** Notification
+Notification
+
+*** Interaction functions
+Interaction functions

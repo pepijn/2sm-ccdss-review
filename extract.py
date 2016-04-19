@@ -86,12 +86,35 @@ for name, data in studies.iteritems():
         annotation.update(body=body)
         data['annotations'][element].append(annotation)
 
+mycin = PyOrgMode.OrgDataStructure()
+mycin.load_from_file("mycin.org")
+
+examples = {}
+def extract(root):
+    if type(root) is str:
+        if root.strip():
+            return root
+        else:
+            return
+
+    for node in root.content:
+        val = extract(node)
+        if type(val) is str:
+            element = root.heading
+
+            if not examples.get(element, None):
+                examples[element] = []
+
+            examples[element].append(val)
+
+extract(mycin.root)
+
 for name, study in studies.iteritems():
     if not study['annotations']:
         continue
 
     base = PyOrgMode.OrgDataStructure()
-    base.load_from_file("mycin.org")
+    base.load_from_file("elements.org")
 
     def extract(root):
         if all([type(node) is str for node in root.content]):
@@ -118,10 +141,10 @@ for name, study in studies.iteritems():
                 root.append_clean(_props)
 
 
-            root.append_clean('\n#+BEGIN_EXAMPLE\n')
-            root.append_clean('MYCIN example:\n')
+            root.append_clean('\n#+BEGIN_QUOTE\n')
+            root.append_clean('Developer checklist:\n')
             root.append_clean(''.join(content[0:]).strip())
-            root.append_clean('\n#+END_EXAMPLE\n\n')
+            root.append_clean('\n#+END_QUOTE\n\n')
 
             if not annotations:
                 root.todo = 'TODO'
@@ -150,6 +173,13 @@ for name, study in studies.iteritems():
                     root.append_clean(el)
             else:
                 root.append_clean(textwrap.fill(annotations[0]['body'], 80) + '\n\n')
+
+
+            root.append_clean('#+BEGIN_EXAMPLE\n')
+            root.append_clean('MYCIN example:\n')
+            root.append_clean(examples.get(root.heading, 'N/A'))
+            root.append_clean('#+END_EXAMPLE\n')
+
             root.append_clean('\n')
 
             return root

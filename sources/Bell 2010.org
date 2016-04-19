@@ -6,13 +6,17 @@ SCHEDULED: <2016-04-13 Wed 23:05>
 :COORDINATES: 7, 541
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Knowledge representation and reasoning mechanisms to be used.
+#+END_QUOTE
+
+Externally described decision support framework.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Rules represented as LISP expressions and an associated inference engine.
 #+END_EXAMPLE
-
-Externally described decision support framework.
-
 
 ** Trigger
 SCHEDULED: <2016-04-13 Wed 23:05>
@@ -21,13 +25,41 @@ SCHEDULED: <2016-04-13 Wed 23:05>
 :COORDINATES: 13, 688
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Data or interaction that triggers the system to begin processing.
+#+END_QUOTE
+
+Alerts and reminders in the EHR guide the clinician to the CDSS.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Initiated by a user seeking advice (clinician).
 #+END_EXAMPLE
 
-Alerts and reminders in the EHR guide the clinician to the CDSS.
+** TODO Organizational/Environmental factors
 
+#+BEGIN_QUOTE
+Developer checklist:
+Factors that affect the implementation or adoption of decision support systems
+in general, such as the 'Meaningful Use' plan.
+#+END_QUOTE
+
+** TODO Study factors
+
+#+BEGIN_QUOTE
+Developer checklist:
+Factors that affect the outcome of the study but do not reflect on the decision
+support system itself, such as poor study power or contamination of the control
+group)
+#+END_QUOTE
+
+** TODO Empirical measures
+
+#+BEGIN_QUOTE
+Developer checklist:
+Measured usage, usability, etc.
+#+END_QUOTE
 
 * Clinical stream
 ** Patient
@@ -37,15 +69,21 @@ SCHEDULED: <2016-04-11 Mon 23:03>
 :COORDINATES: 202, 320
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+- Patient population.
+- Relevant attributes (chief complaint, history of present illness, problem
+  list, preferences, wish to be involved in decisions, etc.)
+#+END_QUOTE
+
+Children aged 2 to 18 years with asthma, identified by the ICD-9 code in their
+chronic-problem lists or visit diagnoses.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 - Hospitalized patients with severe bacterial infections.
 - Demographics, allergies, background conditions (eg., compromised host?), etc.
 #+END_EXAMPLE
-
-Children aged 2 to 18 years with asthma, identified by the ICD-9 code in their
-chronic-problem lists or visit diagnoses.
-
 
 ** Clinical knowledge
 SCHEDULED: <2016-04-13 Wed 23:05>
@@ -54,14 +92,18 @@ SCHEDULED: <2016-04-13 Wed 23:05>
 :COORDINATES: 7, 598
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Source(s) and types of clinical knowledge required.
+#+END_QUOTE
+
+Asthma severity classification guidelines (NAEPP).
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 - Clinical experts.
 - Bacterial identification and empirical antibiotic choice.
 #+END_EXAMPLE
-
-Asthma severity classification guidelines (NAEPP).
-
 
 ** Patient data
 SCHEDULED: <2016-04-13 Wed 23:05>
@@ -70,15 +112,21 @@ SCHEDULED: <2016-04-13 Wed 23:05>
 :COORDINATES: 315, 456
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Data elements:
+- Sources and types of data elements.
+- Interpretation/action if data element is missing.
+#+END_QUOTE
+
+Asthma severity classification is entered by user.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 - Gender, age, current diagnosis, vital signs, bacterial morphology, culture
   site, etc.
 - Entered by user (not integrated with EHR).
 #+END_EXAMPLE
-
-Asthma severity classification is entered by user.
-
 
 ** Clinical conclusions
 SCHEDULED: <2016-04-19 Tue 14:08>
@@ -87,20 +135,24 @@ SCHEDULED: <2016-04-19 Tue 14:08>
 :COORDINATES: 266, 226
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Types of conclusions the system can draw.
+#+END_QUOTE
+
+Therapy statistics, disease under control or not, and recommended therapies.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Identity of organism, underlying inferences, and degree of certainty.
 #+END_EXAMPLE
 
-Therapy statistics, disease under control or not, and recommended therapies.
-
-
 ** Clinical advice
 
-#+BEGIN_EXAMPLE
-MYCIN example:
-Whether to treat, choice of antibiotic(s), and strength of recommendation.
-#+END_EXAMPLE
+#+BEGIN_QUOTE
+Developer checklist:
+Types and wording of advice the system can present.
+#+END_QUOTE
 
 *** #1
 SCHEDULED: <2016-04-13 Wed 23:05>
@@ -120,6 +172,10 @@ SCHEDULED: <2016-04-19 Tue 14:07>
 
 The CCDSS presents whether the asthma is under control or not.
 
+#+BEGIN_EXAMPLE
+MYCIN example:
+Whether to treat, choice of antibiotic(s), and strength of recommendation.
+#+END_EXAMPLE
 
 * Cognitive-behavioral stream
 ** User(s)
@@ -129,14 +185,21 @@ SCHEDULED: <2016-04-13 Wed 23:05>
 :COORDINATES: 187, 678
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+- Role (patient, patientþdoctor, junior doctor, specialist, etc.).
+- Setting (home, ward, ICU, etc.).
+- Clinical workflow (clinical activity and tasks).
+- Cognitive workflow (sequence of data capture and reasoning).
+#+END_QUOTE
+
+Clinicians at practices with experience using an ambulatory EHR.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Clinician(s) requiring infectious disease consultation (expertise in other
 areas).
 #+END_EXAMPLE
-
-Clinicians at practices with experience using an ambulatory EHR.
-
 
 ** Cognitive-behavioral knowledge
 SCHEDULED: <2016-04-19 Tue 11:52>
@@ -145,22 +208,28 @@ SCHEDULED: <2016-04-19 Tue 11:52>
 :COORDINATES: 10, 371
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+- Anticipated usage/workflow.
+- Theory/strategy for support (expected utility, prospect theory, behavior
+  change, etc.)
+#+END_QUOTE
+
+Need to improve clinician adherence to guidelines.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Need to communicate in natural language; need for explanation of reasoning; need
 to manage and convey uncertainty.
 #+END_EXAMPLE
 
-Need to improve clinician adherence to guidelines.
-
-
 ** User data
 
-#+BEGIN_EXAMPLE
-MYCIN example:
-Text input from user (eg, answering simple questions, entering data, user enters
-“why” or “how”).
-#+END_EXAMPLE
+#+BEGIN_QUOTE
+Developer checklist:
+- Static data (eg, role, supervisor, preferences)
+- Dynamic data (mouse clicks, response to previous alerts, etc.).
+#+END_QUOTE
 
 *** #1
 SCHEDULED: <2016-04-11 Mon 23:03>
@@ -182,6 +251,11 @@ SCHEDULED: <2016-04-13 Wed 23:05>
 The clinician is prompted to enter an asthma severity classification if none is
 on file.
 
+#+BEGIN_EXAMPLE
+MYCIN example:
+Text input from user (eg, answering simple questions, entering data, user enters
+“why” or “how”).
+#+END_EXAMPLE
 
 ** Cognitive-behavioral conclusions
 SCHEDULED: <2016-04-11 Mon 23:03>
@@ -190,13 +264,17 @@ SCHEDULED: <2016-04-11 Mon 23:03>
 :COORDINATES: 10, 665
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Conclusions that the system can draw about the user.
+#+END_QUOTE
+
+User needs to be reminded of guideline based recommendations.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 User wants advice, an explanation, or help.
 #+END_EXAMPLE
-
-User needs to be reminded of guideline based recommendations.
-
 
 ** Presentation
 *** Content
@@ -206,13 +284,17 @@ SCHEDULED: <2016-04-19 Tue 14:07>
 :COORDINATES: 250, 163
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Content (eg, framing)
+#+END_QUOTE
+
+Patient data and recommendations phrased in natural language.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Conclusion and advice phrased in natural language
 #+END_EXAMPLE
-
-Patient data and recommendations phrased in natural language.
-
 
 *** Timing
 SCHEDULED: <2016-04-19 Tue 14:09>
@@ -221,13 +303,17 @@ SCHEDULED: <2016-04-19 Tue 14:09>
 :COORDINATES: 17, 714
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Timing
+#+END_QUOTE
+
+Immediate.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Immediate
 #+END_EXAMPLE
-
-Immediate.
-
 
 *** Channel
 SCHEDULED: <2016-04-11 Mon 23:03>
@@ -236,13 +322,17 @@ SCHEDULED: <2016-04-11 Mon 23:03>
 :COORDINATES: 92, 336
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Channel
+#+END_QUOTE
+
+Embedded in EHR system.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Stand-alone system
 #+END_EXAMPLE
-
-Embedded in EHR system.
-
 
 *** Format
 SCHEDULED: <2016-04-19 Tue 14:07>
@@ -251,13 +341,17 @@ SCHEDULED: <2016-04-19 Tue 14:07>
 :COORDINATES: 28, 147
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Format
+#+END_QUOTE
+
+Plain text.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Plain text
 #+END_EXAMPLE
-
-Plain text.
-
 
 *** Notification
 SCHEDULED: <2016-04-11 Mon 23:03>
@@ -266,13 +360,17 @@ SCHEDULED: <2016-04-11 Mon 23:03>
 :COORDINATES: 5, 518
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Notification
+#+END_QUOTE
+
+Presented in the clinical workflow without disruptive pop-ups.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Direct display
 #+END_EXAMPLE
-
-Presented in the clinical workflow without disruptive pop-ups.
-
 
 *** Interaction functions
 SCHEDULED: <2016-04-11 Mon 23:03>
@@ -281,11 +379,15 @@ SCHEDULED: <2016-04-11 Mon 23:03>
 :COORDINATES: 259, 454
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Interaction functions
+#+END_QUOTE
+
+User may update asthma severity classification status.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 User may type “why” or “how” for explanation
 #+END_EXAMPLE
-
-User may update asthma severity classification status.
-
 

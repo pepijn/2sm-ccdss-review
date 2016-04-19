@@ -19,6 +19,13 @@
 # Add files and commands to this file, like the example:
 #   watch(%r{file/path}) { `command(s)` }
 #
+
+def extract
+  `chmod 600 sources/*.org`
+  puts `python extract.py sources/*.pdf`
+  `chmod 400 sources/*.org`
+end
+
 guard :shell do
   watch('bachelor_thesis.tex.gpg') do |path, _|
     decrypted = path[0..-5]
@@ -35,13 +42,15 @@ guard :shell do
     next unless path.exist?
     puts path
     `mv "#{path}" sources`
-    `chmod 600 sources/*.org`
-    puts `python extract.py sources/*.pdf`
-    `chmod 400 sources/*.org`
+    extract
     system 'python summarize.py sources/*.org'
   end
 
   watch('summarize.py') do
     system 'python summarize.py sources/*.org'
+  end
+
+  watch('extract.py') do
+    extract
   end
 end

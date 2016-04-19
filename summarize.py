@@ -13,18 +13,35 @@ import dateutil.parser
 from datetime import timedelta, datetime
 from pprint import pprint
 
-example = PyOrgMode.OrgDataStructure()
-example.load_from_file('mycin.org')
+checklist = PyOrgMode.OrgDataStructure()
+checklist.load_from_file('elements.org')
 
 elements = {}
+checklist_items = {}
+
+def extract(root):
+    if type(root) is str:
+        if root.strip():
+            return root
+        else:
+            return
+
+    for node in root.content:
+        val = extract(node)
+        if type(val) is str:
+            element = root.heading
+
+            elements[element] = dict()
+
+            if not checklist_items.get(element, None):
+                checklist_items[element] = []
+
+            checklist_items[element].append(val)
+
+extract(checklist.root)
+pprint(checklist_items)
 
 studies = ['MYCIN']
-
-data = open('sources/articles.csv')
-
-for row in csv.DictReader(data):
-    study = row.pop('Study')
-    studies.append(study)
 
 def extract(root):
     if type(root) is str:
@@ -43,9 +60,16 @@ def extract(root):
 
             elements[element]['MYCIN'].append(val)
 
+example = PyOrgMode.OrgDataStructure()
+example.load_from_file('mycin.org')
+
 extract(example.root)
 
 files = sys.argv[1:]
+
+for row in csv.DictReader(open('sources/articles.csv')):
+    study = row.pop('Study')
+    studies.append(study)
 
 for path in files:
     study = path[8:-4]
@@ -75,14 +99,14 @@ for path in files:
                     if not line:
                         continue
 
-                    if line == '#+END_EXAMPLE':
+                    if line[0:6] == '#+END_':
                         example = False
                         continue
 
                     if example:
                         continue
 
-                    if line == '#+BEGIN_EXAMPLE':
+                    if line[0:8] == '#+BEGIN_':
                         example = True
                         continue
 
@@ -111,6 +135,9 @@ def extract(root):
     if all(string_branches):
         element = str(root.heading)
         root.content = []
+        root.append_clean(checklist_items[element])
+        root.append_clean('\n')
+
         dones = 0
         not_dones = 0
         for study in studies:
@@ -139,7 +166,7 @@ def extract(root):
 
     return root
 
-extraction.append_clean(extract(example.root).content)
+extraction.append_clean(extract(checklist.root).content)
 
 data = open('sources/excluded.csv')
 

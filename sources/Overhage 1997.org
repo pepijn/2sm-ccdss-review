@@ -6,13 +6,17 @@ SCHEDULED: <2016-04-19 Tue 11:52>
 :COORDINATES: 300, 431
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Knowledge representation and reasoning mechanisms to be used.
+#+END_QUOTE
+
+'Order Entry Gopher'; Rule based reminder program.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Rules represented as LISP expressions and an associated inference engine.
 #+END_EXAMPLE
-
-'Order Entry Gopher'; Rule based reminder program.
-
 
 ** Trigger
 SCHEDULED: <2016-04-14 Thu 21:39>
@@ -21,13 +25,41 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 28, 25
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Data or interaction that triggers the system to begin processing.
+#+END_QUOTE
+
+User enters a 'trigger' order.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Initiated by a user seeking advice (clinician).
 #+END_EXAMPLE
 
-User enters a 'trigger' order.
+** TODO Organizational/Environmental factors
 
+#+BEGIN_QUOTE
+Developer checklist:
+Factors that affect the implementation or adoption of decision support systems
+in general, such as the 'Meaningful Use' plan.
+#+END_QUOTE
+
+** TODO Study factors
+
+#+BEGIN_QUOTE
+Developer checklist:
+Factors that affect the outcome of the study but do not reflect on the decision
+support system itself, such as poor study power or contamination of the control
+group)
+#+END_QUOTE
+
+** TODO Empirical measures
+
+#+BEGIN_QUOTE
+Developer checklist:
+Measured usage, usability, etc.
+#+END_QUOTE
 
 * Clinical stream
 ** Patient
@@ -37,22 +69,27 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 286, 501
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+- Patient population.
+- Relevant attributes (chief complaint, history of present illness, problem
+  list, preferences, wish to be involved in decisions, etc.)
+#+END_QUOTE
+
+Hospitalized in interal medicine at one institution.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 - Hospitalized patients with severe bacterial infections.
 - Demographics, allergies, background conditions (eg., compromised host?), etc.
 #+END_EXAMPLE
 
-Hospitalized in interal medicine at one institution.
-
-
 ** Clinical knowledge
 
-#+BEGIN_EXAMPLE
-MYCIN example:
-- Clinical experts.
-- Bacterial identification and empirical antibiotic choice.
-#+END_EXAMPLE
+#+BEGIN_QUOTE
+Developer checklist:
+Source(s) and types of clinical knowledge required.
+#+END_QUOTE
 
 *** #1
 SCHEDULED: <2016-04-14 Thu 21:13>
@@ -72,6 +109,11 @@ SCHEDULED: <2016-04-14 Thu 21:13>
 
 Drug utilization review criteria developed independtly by clinical experts.
 
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Clinical experts.
+- Bacterial identification and empirical antibiotic choice.
+#+END_EXAMPLE
 
 ** Patient data
 SCHEDULED: <2016-04-14 Thu 21:39>
@@ -80,12 +122,12 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 289, 108
 :END:
 
-#+BEGIN_EXAMPLE
-MYCIN example:
-- Gender, age, current diagnosis, vital signs, bacterial morphology, culture
-  site, etc.
-- Entered by user (not integrated with EHR).
-#+END_EXAMPLE
+#+BEGIN_QUOTE
+Developer checklist:
+Data elements:
+- Sources and types of data elements.
+- Interpretation/action if data element is missing.
+#+END_QUOTE
 
 Demographic information, diagnoses and problem lists, inpatient and outpatient
 visits, admitting history and physical examination reports, discharge summaries,
@@ -93,6 +135,12 @@ vital signs, immunizations given, nearly all diagnostic test results (including
 serologies, cervical cytology, and mammograms), procedures, and outpatient
 prescriptions
 
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Gender, age, current diagnosis, vital signs, bacterial morphology, culture
+  site, etc.
+- Entered by user (not integrated with EHR).
+#+END_EXAMPLE
 
 ** Clinical conclusions
 SCHEDULED: <2016-04-14 Thu 21:39>
@@ -101,13 +149,17 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 293, 404
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Types of conclusions the system can draw.
+#+END_QUOTE
+
+Appropriate corollary orders.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Identity of organism, underlying inferences, and degree of certainty.
 #+END_EXAMPLE
-
-Appropriate corollary orders.
-
 
 ** Clinical advice
 SCHEDULED: <2016-04-14 Thu 21:39>
@@ -116,13 +168,17 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 295, 502
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Types and wording of advice the system can present.
+#+END_QUOTE
+
+Order recommendations with reasoning and dose
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Whether to treat, choice of antibiotic(s), and strength of recommendation.
 #+END_EXAMPLE
-
-Order recommendations with reasoning and dose
-
 
 * Cognitive-behavioral stream
 ** User(s)
@@ -132,14 +188,21 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 32, 58
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+- Role (patient, patientþdoctor, junior doctor, specialist, etc.).
+- Setting (home, ward, ICU, etc.).
+- Clinical workflow (clinical activity and tasks).
+- Cognitive workflow (sequence of data capture and reasoning).
+#+END_QUOTE
+
+Medicine physicians that place orders.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Clinician(s) requiring infectious disease consultation (expertise in other
 areas).
 #+END_EXAMPLE
-
-Medicine physicians that place orders.
-
 
 ** Cognitive-behavioral knowledge
 SCHEDULED: <2016-04-14 Thu 21:13>
@@ -148,14 +211,20 @@ SCHEDULED: <2016-04-14 Thu 21:13>
 :COORDINATES: 289, 624
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+- Anticipated usage/workflow.
+- Theory/strategy for support (expected utility, prospect theory, behavior
+  change, etc.)
+#+END_QUOTE
+
+Need to reduce order omissions errors during inpatient stays.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Need to communicate in natural language; need for explanation of reasoning; need
 to manage and convey uncertainty.
 #+END_EXAMPLE
-
-Need to reduce order omissions errors during inpatient stays.
-
 
 ** User data
 SCHEDULED: <2016-04-14 Thu 21:39>
@@ -164,14 +233,19 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 293, 334
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+- Static data (eg, role, supervisor, preferences)
+- Dynamic data (mouse clicks, response to previous alerts, etc.).
+#+END_QUOTE
+
+Acceptance, rejection or modification per recommended order.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Text input from user (eg, answering simple questions, entering data, user enters
 “why” or “how”).
 #+END_EXAMPLE
-
-Acceptance, rejection or modification per recommended order.
-
 
 ** Cognitive-behavioral conclusions
 SCHEDULED: <2016-04-14 Thu 21:39>
@@ -180,13 +254,17 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 293, 281
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Conclusions that the system can draw about the user.
+#+END_QUOTE
+
+User should respond to the recommendations.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 User wants advice, an explanation, or help.
 #+END_EXAMPLE
-
-User should respond to the recommendations.
-
 
 ** Presentation
 *** Content
@@ -196,13 +274,17 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 241, 547
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Content (eg, framing)
+#+END_QUOTE
+
+Recommendations phrased in natural language.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Conclusion and advice phrased in natural language
 #+END_EXAMPLE
-
-Recommendations phrased in natural language.
-
 
 *** Timing
 SCHEDULED: <2016-04-14 Thu 21:39>
@@ -211,13 +293,17 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 292, 365
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Timing
+#+END_QUOTE
+
+Immediate.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Immediate
 #+END_EXAMPLE
-
-Immediate.
-
 
 *** Channel
 SCHEDULED: <2016-04-14 Thu 21:39>
@@ -226,13 +312,17 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 15, 43
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Channel
+#+END_QUOTE
+
+Integrated into computer order entry system.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Stand-alone system
 #+END_EXAMPLE
-
-Integrated into computer order entry system.
-
 
 *** Format
 SCHEDULED: <2016-04-14 Thu 21:39>
@@ -241,13 +331,17 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 420, 510
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Format
+#+END_QUOTE
+
+Plain text
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Plain text
 #+END_EXAMPLE
-
-Plain text
-
 
 *** Notification
 SCHEDULED: <2016-04-14 Thu 21:39>
@@ -256,13 +350,17 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 292, 385
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Notification
+#+END_QUOTE
+
+Direct display.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 Direct display
 #+END_EXAMPLE
-
-Direct display.
-
 
 *** Interaction functions
 SCHEDULED: <2016-04-14 Thu 21:39>
@@ -271,11 +369,15 @@ SCHEDULED: <2016-04-14 Thu 21:39>
 :COORDINATES: 169, 534
 :END:
 
+#+BEGIN_QUOTE
+Developer checklist:
+Interaction functions
+#+END_QUOTE
+
+User can select one choice per order.
+
 #+BEGIN_EXAMPLE
 MYCIN example:
 User may type “why” or “how” for explanation
 #+END_EXAMPLE
-
-User can select one choice per order.
-
 
