@@ -14,12 +14,20 @@ Rules represented as LISP expressions and an associated inference engine.
 Custom system
 
 
-** TODO Trigger
+** Trigger
+SCHEDULED: <2016-04-19 Tue 14:02>
+:PROPERTIES:
+:PAGE: 3
+:COORDINATES: 16, 207
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Initiated by a user seeking advice (clinician).
 #+END_EXAMPLE
+
+Data entered during consultation.
+
 
 * Clinical stream
 ** Patient
@@ -55,7 +63,12 @@ Bank of clinical scenarios and constructive feedback; Future morbidity
 prediction patient database.
 
 
-** TODO Patient data
+** Patient data
+SCHEDULED: <2016-04-19 Tue 14:01>
+:PROPERTIES:
+:PAGE: 3
+:COORDINATES: 11, 165
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
@@ -64,12 +77,23 @@ MYCIN example:
 - Entered by user (not integrated with EHR).
 #+END_EXAMPLE
 
-** TODO Clinical conclusions
+N/A
+
+
+** Clinical conclusions
+SCHEDULED: <2016-04-19 Tue 14:01>
+:PROPERTIES:
+:PAGE: 3
+:COORDINATES: 15, 117
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Identity of organism, underlying inferences, and degree of certainty.
 #+END_EXAMPLE
+
+N/A
+
 
 ** Clinical advice
 
@@ -149,12 +173,20 @@ Text input from user (eg, answering simple questions, entering data, user enters
 Data entered at consultation by the user.
 
 
-** TODO Cognitive-behavioral conclusions
+** Cognitive-behavioral conclusions
+SCHEDULED: <2016-04-19 Tue 14:03>
+:PROPERTIES:
+:PAGE: 3
+:COORDINATES: 14, 83
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 User wants advice, an explanation, or help.
 #+END_EXAMPLE
+
+N/A
+
 
 ** Presentation
 *** Content
@@ -172,12 +204,20 @@ Conclusion and advice phrased in natural language
 Comments and advice phrased in natural language.
 
 
-*** TODO Timing
+*** Timing
+SCHEDULED: <2016-04-19 Tue 14:03>
+:PROPERTIES:
+:PAGE: 3
+:COORDINATES: 13, 187
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Immediate
 #+END_EXAMPLE
+
+Immediate.
+
 
 *** Channel
 SCHEDULED: <2016-04-18 Mon 16:32>
@@ -209,17 +249,33 @@ Plain text
 Print and others.
 
 
-*** TODO Notification
+*** Notification
+SCHEDULED: <2016-04-19 Tue 14:04>
+:PROPERTIES:
+:PAGE: 3
+:COORDINATES: 397, 55
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Direct display
 #+END_EXAMPLE
 
-*** TODO Interaction functions
+N/A
+
+
+*** Interaction functions
+SCHEDULED: <2016-04-19 Tue 14:04>
+:PROPERTIES:
+:PAGE: 3
+:COORDINATES: 19, 40
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 User may type “why” or “how” for explanation
 #+END_EXAMPLE
+
+N/A
+
 
