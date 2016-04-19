@@ -80,12 +80,20 @@ MYCIN example:
 Asthma severity classification is entered by user.
 
 
-** TODO Clinical conclusions
+** Clinical conclusions
+SCHEDULED: <2016-04-19 Tue 14:08>
+:PROPERTIES:
+:PAGE: 3
+:COORDINATES: 266, 226
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Identity of organism, underlying inferences, and degree of certainty.
 #+END_EXAMPLE
+
+Therapy statistics, disease under control or not, and recommended therapies.
+
 
 ** Clinical advice
 
@@ -104,15 +112,13 @@ SCHEDULED: <2016-04-13 Wed 23:05>
 The CCDSS tool suggests an asthma severity classification.
 
 *** #2
-SCHEDULED: <2016-04-13 Wed 23:05>
+SCHEDULED: <2016-04-19 Tue 14:07>
 :PROPERTIES:
 :PAGE: 3
 :COORDINATES: 131, 204
 :END:
 
-The CCDSS presents whether the asthma is under control or not. (Ik denk dat ik
-hier te ver ga. Ik kan dit niet in de tekst terug vinden, alleen in het plaatje.
-Kunnen jullie mij vertellen wat de grenzen ongeveer zijn?)
+The CCDSS presents whether the asthma is under control or not.
 
 
 * Cognitive-behavioral stream
@@ -194,7 +200,7 @@ User needs to be reminded of guideline based recommendations.
 
 ** Presentation
 *** Content
-SCHEDULED: <2016-04-13 Wed 23:05>
+SCHEDULED: <2016-04-19 Tue 14:07>
 :PROPERTIES:
 :PAGE: 3
 :COORDINATES: 250, 163
@@ -205,16 +211,23 @@ MYCIN example:
 Conclusion and advice phrased in natural language
 #+END_EXAMPLE
 
-Patient data and recommendations phrased in natural language. (Mag ik dit
-plaatje gebruiken voor data extractie?)
+Patient data and recommendations phrased in natural language.
 
 
-*** TODO Timing
+*** Timing
+SCHEDULED: <2016-04-19 Tue 14:09>
+:PROPERTIES:
+:PAGE: 3
+:COORDINATES: 17, 714
+:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Immediate
 #+END_EXAMPLE
+
+Immediate.
+
 
 *** Channel
 SCHEDULED: <2016-04-11 Mon 23:03>
@@ -232,7 +245,7 @@ Embedded in EHR system.
 
 
 *** Format
-SCHEDULED: <2016-04-13 Wed 23:05>
+SCHEDULED: <2016-04-19 Tue 14:07>
 :PROPERTIES:
 :PAGE: 3
 :COORDINATES: 28, 147
@@ -243,8 +256,7 @@ MYCIN example:
 Plain text
 #+END_EXAMPLE
 
-Plain text. (Mag ik dit plaatje gebruiken voor data extractie? Het staat
-namelijk niet in dit artikel beschreven.)
+Plain text.
 
 
 *** Notification
