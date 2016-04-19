@@ -26,21 +26,24 @@ for row in csv.DictReader(data):
     study = row.pop('Study')
     studies.append(study)
 
-for category in example.root.content:
-    for item in category.content:
-        element = elements[item.heading] = {}
-        contents = element[studies[0]] = []
+def extract(root):
+    if type(root) is str:
+        if root.strip():
+            return root
+        else:
+            return
 
-        for line in item.content:
-            if type(line) is not str:
-                continue
+    for node in root.content:
+        val = extract(node)
+        if type(val) is str:
+            element = root.heading
 
-            line = line.strip()
+            if not elements.get(element, None):
+                elements[element] = dict(MYCIN=[])
 
-            if not line:
-                continue
+            elements[element]['MYCIN'].append(val)
 
-            contents.append(line)
+extract(example.root)
 
 files = sys.argv[1:]
 
@@ -93,18 +96,28 @@ for path in files:
 
     extract(base.root)
 
-for category in example.root.content:
-    for item in category.content:
+struct = PyOrgMode.OrgDataStructure()
+extraction = PyOrgMode.OrgNode.Element()
+extraction.heading = 'Data extraction'
+struct.root.append_clean('#+TITLE: Bachelor thesis progress summary\n')
+struct.root.append_clean(extraction)
+
+def extract(root):
+    if type(root) is str:
+        return root
+
+    string_branches = [type(extract(node)) is str for node in list(root.content)]
+
+    if all(string_branches):
+        element = str(root.heading)
+        root.content = []
         dones = 0
         not_dones = 0
-        element = item.heading
-        item.content = []
-
         for study in studies:
             el = PyOrgMode.OrgNode.Element()
             el.heading = study
-
             lines = elements[element].get(study, [])
+
             if study == 'MYCIN':
                 pass
             elif lines:
@@ -115,14 +128,54 @@ for category in example.root.content:
                 el.todo = 'TODO'
 
             for line in lines:
-                el.append_clean(line)
+                el.append_clean('- ' + line)
                 el.append_clean('\n')
             el.append_clean('\n')
 
-            item.append_clean(el)
+            root.append_clean(el)
 
-        item.heading = item.heading + " [%s/%s]" % (dones, dones + not_dones)
-        item.append_clean('#+LaTeX: \\newpage\n')
+        root.heading = element + " [%s/%s]" % (dones, dones + not_dones)
+        root.append_clean('#+LaTeX: \\newpage\n')
 
-example.root.content.insert(0, '#+LaTeX: \\newpage\n')
-example.save_to_file('sources.org')
+    return root
+
+extraction.append_clean(extract(example.root).content)
+
+data = open('sources/excluded.csv')
+
+exclusion_reasons = {}
+
+for row in csv.DictReader(data):
+    study = row.pop('Study')
+    exclusion_reason = str.split(row.pop('Notes')[18:-1], ';')[0]
+    if not exclusion_reasons.get(exclusion_reason, None):
+        exclusion_reasons[exclusion_reason] = []
+    exclusion_reasons[exclusion_reason].append(dict(
+        study=study,
+        title=row.pop('Title')
+    ))
+
+ex = PyOrgMode.OrgNode.Element()
+ex.heading = 'Excluded'
+struct.root.append_clean(ex)
+
+ftr = PyOrgMode.OrgNode.Element()
+ftr.heading = 'Full-text review'
+ex.append_clean(ftr)
+
+for exclusion_reason, studies in exclusion_reasons.items():
+    reason = PyOrgMode.OrgNode.Element()
+    reason.heading = exclusion_reason
+
+    for study in studies:
+        stdy = PyOrgMode.OrgNode.Element()
+        stdy.heading = study['study']
+        stdy.append_clean(study['title'])
+        stdy.append_clean('\n')
+        stdy.append_clean('\n')
+        reason.append_clean(stdy)
+
+    reason.append_clean('#+LaTeX: \\newpage\n')
+    ftr.append_clean(reason)
+
+struct.save_to_file('progress.org')
