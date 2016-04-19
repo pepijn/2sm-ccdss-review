@@ -27,14 +27,13 @@ def extract
 end
 
 guard :shell do
-  watch('bachelor_thesis.tex.gpg') do |path, _|
-    decrypted = path[0..-5]
-    `chmod 600 #{decrypted}`
-    `gpg --batch --yes --output #{decrypted} --decrypt #{path}`
-    `chmod 400 #{decrypted}`
-    `bibtex #{decrypted}`
-    `pdflatex #{decrypted}`
-    `pdflatex #{decrypted}`
+  watch(%r{.+\.tex\.gpg}) do |path, _|
+    `chmod 600 *.tex`
+    `gpg --yes --decrypt-files *.tex.gpg;`
+    `bibtex bachelor_thesis.tex`
+    `pdflatex bachelor_thesis.tex`
+    `pdflatex bachelor_thesis.tex`
+    `rm *.tex`
   end
 
   watch(%r{articles/(.*\.pdf)}) do |path, filename|
