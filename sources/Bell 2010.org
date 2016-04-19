@@ -133,10 +133,10 @@ Clinicians at practices with experience using an ambulatory EHR.
 
 
 ** Cognitive-behavioral knowledge
-SCHEDULED: <2016-04-11 Mon 23:03>
+SCHEDULED: <2016-04-19 Tue 11:52>
 :PROPERTIES:
 :PAGE: 1
-:COORDINATES: 10, 372
+:COORDINATES: 10, 371
 :END:
 
 #+BEGIN_EXAMPLE

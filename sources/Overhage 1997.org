@@ -1,6 +1,6 @@
 * Common
 ** Decision-support system
-SCHEDULED: <2016-04-14 Thu 21:39>
+SCHEDULED: <2016-04-19 Tue 11:52>
 :PROPERTIES:
 :PAGE: 4
 :COORDINATES: 300, 431
@@ -11,7 +11,7 @@ MYCIN example:
 Rules represented as LISP expressions and an associated inference engine.
 #+END_EXAMPLE
 
-Rule based reminder program.
+'Order Entry Gopher'; Rule based reminder program.
 
 
 ** Trigger

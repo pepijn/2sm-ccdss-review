@@ -1,6 +1,6 @@
 * Common
 ** Decision-support system
-SCHEDULED: <2016-04-13 Wed 23:05>
+SCHEDULED: <2016-04-19 Tue 11:52>
 :PROPERTIES:
 :PAGE: 2
 :COORDINATES: 23, 272
@@ -11,7 +11,7 @@ MYCIN example:
 Rules represented as LISP expressions and an associated inference engine.
 #+END_EXAMPLE
 
-Rule based reminder system.
+'Order Entry Gopher'; Rule based reminder system.
 
 
 ** Trigger
@@ -103,7 +103,7 @@ Information from vaccination status by standard admission questionnaire.
 
 
 ** Clinical conclusions
-SCHEDULED: <2016-04-13 Wed 23:05>
+SCHEDULED: <2016-04-19 Tue 11:52>
 :PROPERTIES:
 :PAGE: 3
 :COORDINATES: 261, 613
@@ -153,7 +153,7 @@ all orders.
 
 
 ** Cognitive-behavioral knowledge
-SCHEDULED: <2016-04-13 Wed 23:05>
+SCHEDULED: <2016-04-19 Tue 11:52>
 :PROPERTIES:
 :PAGE: 3
 :COORDINATES: 148, 581
@@ -202,16 +202,27 @@ User should order preventitive care for patient.
 
 ** Presentation
 *** Content
-SCHEDULED: <2016-04-13 Wed 23:05>
-:PROPERTIES:
-:PAGE: 3
-:COORDINATES: 198, 527
-:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 Conclusion and advice phrased in natural language
 #+END_EXAMPLE
+
+**** #1
+SCHEDULED: <2016-04-19 Tue 11:52>
+:PROPERTIES:
+:PAGE: 2
+:COORDINATES: 63, 423
+:END:
+
+Prewritten orders with explanatory text.
+
+**** #2
+SCHEDULED: <2016-04-13 Wed 23:05>
+:PROPERTIES:
+:PAGE: 3
+:COORDINATES: 198, 527
+:END:
 
 Recommendations phrased in natural language.
 
@@ -278,16 +289,27 @@ User receives reminder after neglecting the first opportunity.
 
 
 *** Interaction functions
-SCHEDULED: <2016-04-13 Wed 23:05>
-:PROPERTIES:
-:PAGE: 3
-:COORDINATES: 145, 649
-:END:
 
 #+BEGIN_EXAMPLE
 MYCIN example:
 User may type “why” or “how” for explanation
 #+END_EXAMPLE
+
+**** #1
+SCHEDULED: <2016-04-19 Tue 11:52>
+:PROPERTIES:
+:PAGE: 2
+:COORDINATES: 62, 402
+:END:
+
+User can accept or reject a reminder with one or two keystrokes.
+
+**** #2
+SCHEDULED: <2016-04-19 Tue 11:52>
+:PROPERTIES:
+:PAGE: 3
+:COORDINATES: 145, 649
+:END:
 
 User may pick 'order', 'revise' or 'omit'.
 

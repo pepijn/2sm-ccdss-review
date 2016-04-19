@@ -36,7 +36,7 @@ guard :shell do
     puts path
     `mv "#{path}" sources`
     `chmod 600 sources/*.org`
-    puts `python extract.py sources/#{filename}`
+    puts `python extract.py sources/*.pdf`
     `chmod 400 sources/*.org`
     system 'python summarize.py sources/*.org'
   end

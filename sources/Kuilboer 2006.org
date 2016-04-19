@@ -223,7 +223,7 @@ Part of medical-record system.
 
 
 *** Format
-SCHEDULED: <2016-04-14 Thu 20:20>
+SCHEDULED: <2016-04-18 Mon 21:46>
 :PROPERTIES:
 :PAGE: 2
 :COORDINATES: 143, 358
@@ -234,7 +234,7 @@ MYCIN example:
 Plain text
 #+END_EXAMPLE
 
-Plain text.
+Plain text. hoi
 
 
 *** Notification
