@@ -1,0 +1,269 @@
+* Common
+** Decision-support system
+SCHEDULED: <2016-04-19 Tue 13:25>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 27, 219
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Rules represented as LISP expressions and an associated inference engine.
+#+END_EXAMPLE
+
+'Entry Order Gopher'
+
+
+** Trigger
+SCHEDULED: <2016-04-19 Tue 13:46>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 39, 250
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Initiated by a user seeking advice (clinician).
+#+END_EXAMPLE
+
+Entered patient data into order entry system.
+
+
+* Clinical stream
+** Patient
+SCHEDULED: <2016-04-19 Tue 13:04>
+:PROPERTIES:
+:PAGE: 1
+:COORDINATES: 377, 280
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Hospitalized patients with severe bacterial infections.
+- Demographics, allergies, background conditions (eg., compromised host?), etc.
+#+END_EXAMPLE
+
+Primary care patients with asthma or COPD.
+
+
+** Clinical knowledge
+SCHEDULED: <2016-04-19 Tue 13:31>
+:PROPERTIES:
+:PAGE: 4
+:COORDINATES: 23, 233
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Clinical experts.
+- Bacterial identification and empirical antibiotic choice.
+#+END_EXAMPLE
+
+Evidence-based guidelines for managing asthma, reviewed by clinical experts.
+
+
+** Patient data
+SCHEDULED: <2016-04-19 Tue 13:11>
+:PROPERTIES:
+:PAGE: 4
+:COORDINATES: 366, 325
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+- Gender, age, current diagnosis, vital signs, bacterial morphology, culture
+  site, etc.
+- Entered by user (not integrated with EHR).
+#+END_EXAMPLE
+
+Current medications, prior vaccinations, spirometric data, and evidence of
+recent exacerbations of their reactive airways disease (i.e., hospitalizations
+or emergency room visits)
+
+
+** Clinical conclusions
+SCHEDULED: <2016-04-19 Tue 13:56>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 31, 172
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Identity of organism, underlying inferences, and degree of certainty.
+#+END_EXAMPLE
+
+N/A
+
+
+** Clinical advice
+SCHEDULED: <2016-04-19 Tue 13:36>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 391, 188
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Whether to treat, choice of antibiotic(s), and strength of recommendation.
+#+END_EXAMPLE
+
+Care suggestions.
+
+
+* Cognitive-behavioral stream
+** User(s)
+SCHEDULED: <2016-04-19 Tue 13:04>
+:PROPERTIES:
+:PAGE: 1
+:COORDINATES: 377, 302
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Clinician(s) requiring infectious disease consultation (expertise in other
+areas).
+#+END_EXAMPLE
+
+General internists, interal medicine residents, and outpatient pharmacists.
+
+
+** Cognitive-behavioral knowledge
+SCHEDULED: <2016-04-19 Tue 13:07>
+:PROPERTIES:
+:PAGE: 2
+:COORDINATES: 366, 286
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Need to communicate in natural language; need for explanation of reasoning; need
+to manage and convey uncertainty.
+#+END_EXAMPLE
+
+Need to improve outpatient management and outcomes among patient with asthma or
+COPD.
+
+
+** User data
+SCHEDULED: <2016-04-19 Tue 13:30>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 45, 285
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Text input from user (eg, answering simple questions, entering data, user enters
+“why” or “how”).
+#+END_EXAMPLE
+
+(Only) severity of dyspnea and number of exacerbations in previous month.
+
+
+** Cognitive-behavioral conclusions
+SCHEDULED: <2016-04-19 Tue 13:56>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 29, 152
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+User wants advice, an explanation, or help.
+#+END_EXAMPLE
+
+N/A
+
+
+** Presentation
+*** Content
+SCHEDULED: <2016-04-19 Tue 13:24>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 35, 199
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Conclusion and advice phrased in natural language
+#+END_EXAMPLE
+
+'Suggested orders' phrased in natural language.
+
+
+*** Timing
+SCHEDULED: <2016-04-19 Tue 13:56>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 20, 200
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Immediate
+#+END_EXAMPLE
+
+Immediate.
+
+
+*** Channel
+SCHEDULED: <2016-04-19 Tue 13:23>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 388, 222
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Stand-alone system
+#+END_EXAMPLE
+
+Integrated into order-entry system.
+
+
+*** Format
+SCHEDULED: <2016-04-19 Tue 13:23>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 47, 215
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Plain text
+#+END_EXAMPLE
+
+Plain text.
+
+
+*** Notification
+SCHEDULED: <2016-04-19 Tue 13:56>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 14, 237
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+Direct display
+#+END_EXAMPLE
+
+Direct display.
+
+
+*** Interaction functions
+SCHEDULED: <2016-04-19 Tue 13:25>
+:PROPERTIES:
+:PAGE: 5
+:COORDINATES: 42, 126
+:END:
+
+#+BEGIN_EXAMPLE
+MYCIN example:
+User may type “why” or “how” for explanation
+#+END_EXAMPLE
+
+Take actions on orders, ask for help etc.
+
+
