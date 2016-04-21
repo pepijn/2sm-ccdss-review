@@ -52,4 +52,12 @@ guard :shell do
   watch('extract.py') do
     extract
   end
+
+  watch('save.py') do
+    `python save.py output.org`
+  end
+
+  watch('extract2.py') do
+    `python extract2.py "articles2/Dexter\ et\ al.\ -\ 2001\ -\ A\ Computerized\ Reminder\ System\ to\ Increase\ the\ Use\ of\ Preventive\ Care\ for\ Hospitalized\ Patients.pdf" < saved.yml`
+  end
 end
