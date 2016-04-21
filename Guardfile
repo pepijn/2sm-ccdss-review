@@ -60,4 +60,9 @@ guard :shell do
   watch('extract2.py') do
     `python extract2.py "articles2/Dexter\ et\ al.\ -\ 2001\ -\ A\ Computerized\ Reminder\ System\ to\ Increase\ the\ Use\ of\ Preventive\ Care\ for\ Hospitalized\ Patients.pdf" < saved.yml`
   end
+
+  watch(%r{articles2/(.+)\.pdf}) do |path, filename|
+    output = filename.split('-')[0..1].map(&:strip).join(' ') + '.yml'
+    system "bash edit.bash '#{path}' 'sources/#{output}'"
+  end
 end
