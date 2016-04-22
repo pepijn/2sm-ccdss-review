@@ -22,6 +22,11 @@ for element_name, contents in (yaml.load(open(sys.argv[1])) or {}).get('elements
 elements = {}
 el_indexes = []
 
+classifications = ['Reported',
+                   'Not reported',
+                   'Inferred but nearly certain',
+                   'Inferred and uncertain']
+
 for fragment in source.root.content[1:]:
     for line in fragment.content[1:]:
         match = re.match('\s+- \[X\] (.+)', line)
@@ -48,7 +53,15 @@ def extract(root):
             root.todo = 'TODO'
 
         root.content = []
-        for line in current.get(element, []):
+        for classification in classifications:
+            if classification in current.get(element, {}).get('classification', []):
+                root.append_clean('- [X] %s\n' % classification)
+            else:
+                root.append_clean('- [ ] %s\n' % classification)
+
+        root.append_clean('\n')
+
+        for line in current.get(element, {}).get('summary', []):
             root.append_clean(line + '\n')
         root.append_clean('\n')
 
@@ -59,11 +72,9 @@ def extract(root):
             for line in fragment.content[:-2]:
                 if type(line) is str and line[:8] == '- Common':
                     break
-                    #el.append_clean(':ELEMENTS:\n')
 
                 el.append_clean(line)
                 el.append_clean('\n')
-            #el.append_clean(':END:\n')
             root.append_clean(el)
 
         root.append_clean('#+LaTeX: \\newpage\n')

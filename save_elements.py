@@ -21,8 +21,21 @@ def extract(root):
     if any([node.heading[:8] == 'Fragment' for node in branches]):
         lines = [l for l in root.content if type(l) is str and l.strip()]
 
-        if lines:
-            elements[root.heading] = lines
+        element = elements.setdefault(root.heading, {})
+
+        for line in root.content:
+            if type(line) is not str:
+                break
+
+            match = re.match('- \[([X ])\] (.+)', line)
+            if match:
+                if match.groups()[0] == 'X':
+                    clsn = element.setdefault('classification', [])
+                    clsn.append(match.groups()[1])
+            else:
+                if line.strip():
+                    lines = element.setdefault('summary', [])
+                    lines.append(line)
 
     return root
 
