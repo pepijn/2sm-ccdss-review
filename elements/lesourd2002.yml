@@ -1,0 +1,17 @@
+elements:
+  Clinical advice:
+  - Therapy protocol.
+  Clinical conclusions:
+  - Ability of ovaries to respond to FSH stimulation, responder type classification.
+  Cognitive-behavioral knowledge:
+  - Need to monitor, and evaluate efficiency and complications of ovarian
+  - stimulation.
+  Interaction functions:
+  - Override advice.
+  Patient:
+  - Women undergoing ovarian stimulation to treat infertility.
+  Patient data:
+  - Age, results of previous cycle, infertility data.
+  User data:
+  - Results of cycle, outcome of pregnancy, etc.
+

@@ -10,12 +10,10 @@ import re
 
 checklist = PyOrgMode.OrgDataStructure()
 checklist.load_from_file('elements.org')
+checklist.root.content.insert(0, '#+STARTUP: showall\n')
 
 source = PyOrgMode.OrgDataStructure()
 source.load_from_string(sys.stdin.read())
-
-output = PyOrgMode.OrgDataStructure()
-output.root.append_clean('#+STARTUP: showall\n')
 
 current = {}
 for element_name, contents in (yaml.load(open(sys.argv[1])) or {}).get('elements', {}).items():
