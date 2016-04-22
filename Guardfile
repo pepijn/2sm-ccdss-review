@@ -57,8 +57,9 @@ guard :shell do
     `python save.py output.org`
   end
 
-  watch('extract2.py') do
-    `python extract2.py "articles2/Dexter\ et\ al.\ -\ 2001\ -\ A\ Computerized\ Reminder\ System\ to\ Increase\ the\ Use\ of\ Preventive\ Care\ for\ Hospitalized\ Patients.pdf" < saved.yml`
+  watch('summarize2.py') do
+    `python2 extract2.py "articles2/Dexter\ et\ al.\ -\ 2001\ -\ A\ Computerized\ Reminder\ System\ to\ Increase\ the\ Use\ of\ Preventive\ Care\ for\ Hospitalized\ Patients.pdf" < "sources/Dexter et al. 2001.yml" \ |
+    python2 summarize2.py > /tmp/dexter.org`
   end
 
   watch(%r{articles2/(.+)\.pdf}) do |path, filename|
