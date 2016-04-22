@@ -1,28 +1,78 @@
 elements:
+  Channel:
+    classification:
+    - Not reported
   Clinical advice:
+    classification:
+    - Reported
     summary:
     - Therapy protocol.
   Clinical conclusions:
+    classification:
+    - Reported
     summary:
     - Ability of ovaries to respond to FSH stimulation, responder type classification.
-  Clinical knowledge: {}
+  Clinical knowledge:
+    classification:
+    - Reported
+    - Not reported
+    summary:
+    - The protocols are based on step-up regimens.
+  Cognitive-behavioral conclusions:
+    classification:
+    - Not reported
   Cognitive-behavioral knowledge:
+    classification:
+    - Reported
     summary:
     - Need to monitor, and evaluate efficiency and complications of ovarian
     - stimulation.
-  Content: {}
-  Decision-support system: {}
+  Content:
+    classification:
+    - Reported
+    - Not reported
+    summary:
+    - Does not mention the content of the advice.
+  Decision-support system:
+    classification:
+    - Not reported
+  Format:
+    classification:
+    - Not reported
   Interaction functions:
+    classification:
+    - Reported
+    - Not reported
     summary:
     - Override advice.
+  Notification:
+    classification:
+    - Not reported
   Patient:
+    classification:
+    - Reported
     summary:
     - Women undergoing ovarian stimulation to treat infertility.
   Patient data:
+    classification:
+    - Reported
     summary:
     - Age, results of previous cycle, infertility data.
-  Trigger: {}
+  Timing:
+    classification:
+    - Not reported
+  Trigger:
+    classification:
+    - Reported
+    - Not reported
+    summary:
+    - A new cycle is proposed when the patient did not become pregnant.
   User data:
+    classification:
+    - Reported
     summary:
     - Results of cycle, outcome of pregnancy, etc.
+  User(s):
+    classification:
+    - Not reported
 
