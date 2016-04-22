@@ -11,6 +11,7 @@ checklist = PyOrgMode.OrgDataStructure()
 checklist.load_from_file('elements.org')
 
 output = PyOrgMode.OrgDataStructure()
+output.root.append_clean('#+STARTUP: showall\n')
 
 pages = {}
 for page_number, fragments in (yaml.load(sys.stdin.read()) or {}).get('pages', {}).items():

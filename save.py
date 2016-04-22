@@ -16,6 +16,9 @@ org.load_from_string(sys.stdin.read())
 pages = {}
 
 for node in org.root.content:
+    if type(node) is str:
+        continue
+
     annotation = dict(elements={})
 
     properties = node.content[0].content
