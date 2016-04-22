@@ -1,45 +1,67 @@
 elements:
   Channel:
-  - '- [X] Reported'
-  - Integrated into the order-entry system for inpatients.
+    classification:
+    - Reported
+    summary:
+    - Integrated into the order-entry system for inpatients.
   Clinical advice:
-  - Prewritten orders with explanatory text.
+    summary:
+    - Prewritten orders with explanatory text.
   Clinical conclusions:
-  - Indication for a preventitive therapy.
+    summary:
+    - Indication for a preventitive therapy.
   Clinical knowledge:
-  - '- [X] Reported'
-  - National guidelines regarding the use of preventitive interventions; 'flu-shot
-  - season'.
+    classification:
+    - Reported
+    summary:
+    - National guidelines regarding the use of preventitive interventions; 'flu-shot
+    - season'.
   Cognitive-behavioral conclusions:
-  - User wants to order or omit the recommended therapy.
+    summary:
+    - User wants to order or omit the recommended therapy.
   Cognitive-behavioral knowledge:
-  - The need to increase preventitive care among hospitalized patients.
+    summary:
+    - The need to increase preventitive care among hospitalized patients.
   Content:
-  - Prewritten orders with explanatory text.
+    summary:
+    - Prewritten orders with explanatory text.
   Decision-support system:
-  - '- [X] Reported'
-  - Rule-based reminder system.
+    classification:
+    - Reported
+    summary:
+    - Rule-based reminder system.
   Format:
-  - '- [X] Reported'
-  - The recommendations are displayed in a different color scheme than the
-  - physician-initiated orders.
+    classification:
+    - Reported
+    summary:
+    - The recommendations are displayed in a different color scheme than the
+    - physician-initiated orders.
   Interaction functions:
-  - '''Escape'' key disabled; accept or reject orders with two keystrokes. Default'
-  - value changes depending on patient.
+    summary:
+    - '''Escape'' key disabled; accept or reject orders with two keystrokes. Default'
+    - value changes depending on patient.
   Patient:
-  - '- [X] Reported'
-  - Patients admitted to general-medicine service.
+    classification:
+    - Reported
+    summary:
+    - Patients admitted to general-medicine service.
   Patient data:
-  - Demographic characteristics of the patient, list of medical problems, diagnoses
-  - etc.; vaccination status.
+    summary:
+    - Demographic characteristics of the patient, list of medical problems, diagnoses
+    - etc.; vaccination status.
   Timing:
-  - '- [X] Inferred but nearly certain'
-  - Immediate
+    classification:
+    - Inferred but nearly certain
+    summary:
+    - Immediate
   Trigger:
-  - '- [X] Reported'
-  - Initialized when the user starts an order-entry session.
+    classification:
+    - Reported
+    summary:
+    - Initialized when the user starts an order-entry session.
   User data:
-  - Accept or rejects reminders.
+    summary:
+    - Accept or rejects reminders.
   User(s):
-  - Resident physicians and medical students on general-medicine teams.
-
+    summary:
+    - Resident physicians and medical students on general-medicine teams.
