@@ -14,13 +14,13 @@ output = PyOrgMode.OrgDataStructure()
 output.root.append_clean('#+STARTUP: showall\n')
 
 pages = {}
-for page_number, fragments in (yaml.load(sys.stdin.read()) or {}).get('pages', {}).items():
+for page_number, fragments in (yaml.load(open(sys.argv[1])) or {}).get('pages', {}).items():
     page = pages.setdefault(page_number, {})
     for fragment in fragments['fragments']:
         coords = tuple([tuple(c) for c in fragment['coords']])
         page[coords] = set(fragment['elements'].keys())
 
-doc = popplerqt4.Poppler.Document.load(sys.argv[1])
+doc = popplerqt4.Poppler.Document.loadFromData(sys.stdin.read())
 total_annotations = 0
 for i in range(doc.numPages()):
     #print("========= PAGE {} =========".format(i+1))

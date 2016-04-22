@@ -19,7 +19,10 @@ def extract(root):
     branches = [extract(node) for node in root.content if hasattr(node, 'heading')]
 
     if any([node.heading[:8] == 'Fragment' for node in branches]):
-        elements[root.heading] = [l for l in root.content if type(l) is str and l.strip()]
+        lines = [l for l in root.content if type(l) is str and l.strip()]
+
+        if lines:
+            elements[root.heading] = lines
 
     return root
 

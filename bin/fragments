@@ -2,9 +2,9 @@
 
 set -euxo pipefail
 
-STORE="studies/$(basename "$1" .pdf).yml"
-touch "$STORE"
+STORE="fragments/$(basename "$1" .pdf).yml"
+
 TMP=$(gmktemp --suffix .org)
-python2 extract2.py "$1" < "$STORE" > $TMP
+python2 extract2.py "$STORE" < "$1" > $TMP
 $EDITOR $TMP
 python2 save.py < $TMP > "$STORE"

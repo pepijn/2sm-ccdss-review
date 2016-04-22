@@ -2,17 +2,15 @@
 
 set -euxo pipefail
 
-FRAGMENTS="studies/$(basename "$1" .pdf).yml"
+FRAGMENTS="fragments/$(basename "$1" .pdf).yml"
 ELEMENTS="elements/$(basename "$1" .pdf).yml"
-touch "$ELEMENTS"
-touch "$FRAGMENTS"
+
+touch $ELEMENTS
+
 TMP=$(gmktemp --suffix .org)
-python2 extract2.py "$1" < "$FRAGMENTS" > $TMP
+python2 extract2.py "$FRAGMENTS" < "$1" \
+        | python2 summarize2.py "$ELEMENTS" > $TMP
 
-TMP2=$(gmktemp --suffix .org)
-python2 summarize2.py "$TMP" < "$ELEMENTS" > $TMP2
+$EDITOR "$TMP"
 
-$EDITOR "$TMP2"
-
-STORE="elements/$(basename "$1" .pdf).yml"
-python2 save_elements.py < "$TMP2" > "$ELEMENTS"
+python2 save_elements.py < "$TMP" > "$ELEMENTS"
