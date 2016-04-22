@@ -20,6 +20,10 @@
 #   watch(%r{file/path}) { `command(s)` }
 #
 
+def fragments(study)
+  puts study
+end
+
 def extract
   `chmod 600 sources/*.org`
   puts `python extract.py sources/*.pdf`
