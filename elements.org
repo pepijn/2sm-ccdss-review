@@ -39,7 +39,7 @@ Types and wording of advice the system can present.
 
 * Cognitive-behavioral stream
 ** User(s)
-- Role (patient, patientþdoctor, junior doctor, specialist, etc.).
+- Role (patient, doctor, junior doctor, specialist, etc.).
 - Setting (home, ward, ICU, etc.).
 - Clinical workflow (clinical activity and tasks).
 - Cognitive workflow (sequence of data capture and reasoning).

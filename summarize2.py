@@ -12,10 +12,14 @@ checklist = PyOrgMode.OrgDataStructure()
 checklist.load_from_file('elements.org')
 
 source = PyOrgMode.OrgDataStructure()
-source.load_from_string(sys.stdin.read())
+source.load_from_file(sys.argv[1])
 
 output = PyOrgMode.OrgDataStructure()
 output.root.append_clean('#+STARTUP: showall\n')
+
+current = {}
+for element_name, contents in (yaml.load(sys.stdin.read()) or {}).get('elements', {}).items():
+    current[element_name] = contents
 
 elements = {}
 el_indexes = []
@@ -45,17 +49,23 @@ def extract(root):
         else:
             root.todo = 'TODO'
 
+        root.content = []
+        for line in current.get(element, []):
+            root.append_clean(line + '\n')
+        root.append_clean('\n')
+
         for fragment in current_elements:
             el = PyOrgMode.OrgNode.Element()
             el.heading = "Fragment %s" % str(el_indexes.index(fragment) + 1)
 
             for line in fragment.content[:-2]:
                 if type(line) is str and line[:8] == '- Common':
-                    el.append_clean(':ELEMENTS:\n')
+                    break
+                    #el.append_clean(':ELEMENTS:\n')
 
                 el.append_clean(line)
                 el.append_clean('\n')
-            el.append_clean(':END:\n')
+            #el.append_clean(':END:\n')
             root.append_clean(el)
 
         root.append_clean('#+LaTeX: \\newpage\n')

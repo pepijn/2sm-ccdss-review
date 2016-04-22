@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -euxo pipefail
+
+STORE="studies/$(basename "$1" .pdf).yml"
+touch "$STORE"
+TMP=$(gmktemp --suffix .org)
+python2 extract2.py "$1" < "$STORE" > $TMP
+$EDITOR $TMP
+python2 save.py < $TMP > "$STORE"

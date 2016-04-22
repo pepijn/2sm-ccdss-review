@@ -55,7 +55,7 @@ for i in range(doc.numPages()):
                     el = PyOrgMode.OrgNode.Element()
                     el.append_clean(props)
 
-                    txt = txt.encode('utf8', 'replace')
+                    txt = txt.encode('utf8', 'ignore')
 
                     el.heading = txt[:45].strip() + '...'
 
