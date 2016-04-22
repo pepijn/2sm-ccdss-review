@@ -31,6 +31,13 @@ pages:
       - [315, 595, 386, 603]
       elements:
         User(s): []
+    - coords:
+      - [486, 424, 537, 434]
+      - [315, 435, 537, 445]
+      - [315, 446, 537, 456]
+      - [315, 457, 350, 467]
+      elements:
+        Cognitive-behavioral knowledge: []
   2:
     fragments:
     - coords:
