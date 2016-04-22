@@ -47,7 +47,7 @@ def extract(root):
         element = root.heading
         current_elements = elements.get(element, [])
 
-        if current_elements:
+        if current.get(element, {}).get('classification', []):
             root.todo = 'DONE'
         else:
             root.todo = 'TODO'
