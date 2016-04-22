@@ -5,18 +5,6 @@ Knowledge representation and reasoning mechanisms to be used.
 ** Trigger
 Data or interaction that triggers the system to begin processing.
 
-** Organizational/Environmental factors
-Factors that affect the implementation or adoption of decision support systems
-in general, such as the 'Meaningful Use' plan.
-
-** Study factors
-Factors that affect the outcome of the study but do not reflect on the decision
-support system itself, such as poor study power or contamination of the control
-group)
-
-** Empirical measures
-Measured usage, usability, etc.
-
 * Clinical stream
 ** Patient
 - Patient population.
