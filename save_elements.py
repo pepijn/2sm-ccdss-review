@@ -16,7 +16,7 @@ org.load_from_string(sys.stdin.read())
 elements = {}
 
 def extract(root):
-    branches = [extract(node) for node in root.content if hasattr(node, 'heading')]
+    [extract(node) for node in root.content if hasattr(node, 'heading')]
 
     if hasattr(root, 'todo'):
         lines = [l for l in root.content if type(l) is str and l.strip()]
