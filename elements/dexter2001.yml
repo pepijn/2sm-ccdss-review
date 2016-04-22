@@ -52,6 +52,9 @@ elements:
     summary:
     - '''Escape'' key disabled; accept or reject orders with two keystrokes. Default'
     - value changes depending on patient.
+  Notification:
+    classification:
+    - Inferred but nearly certain
   Patient:
     classification:
     - Reported

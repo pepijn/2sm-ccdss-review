@@ -18,13 +18,13 @@ elements = {}
 def extract(root):
     branches = [extract(node) for node in root.content if hasattr(node, 'heading')]
 
-    if any([node.heading[:8] == 'Fragment' for node in branches]):
+    if hasattr(root, 'todo'):
         lines = [l for l in root.content if type(l) is str and l.strip()]
 
         element = elements.setdefault(root.heading, {})
 
         for line in root.content:
-            if type(line) is not str:
+            if type(line) is not str or line[0:2] == '#+':
                 break
 
             match = re.match('- \[([X ])\] (.+)', line)
