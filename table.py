@@ -41,5 +41,10 @@ def quantify(classification):
     return quantifications[classification]
 
 df['score'] = df['classification'].map(quantify)
-df.to_excel('/tmp/ding.xls', columns=['flags', 'classification', 'score',
-                                      'summary'])
+
+df = df[['flags', 'classification', 'score', 'summary']]
+df.to_excel('tmp/studies.xlsx')
+
+df.reset_index(1)\
+  .pivot(columns='element', values='score')\
+  .to_excel('tmp/elements.xlsx')
