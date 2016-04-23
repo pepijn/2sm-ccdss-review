@@ -61,9 +61,8 @@ def extract(root):
 
         root.append_clean('\n')
 
-        for line in current.get(element, {}).get('summary', []):
-            root.append_clean(line + '\n')
-        root.append_clean('\n')
+        root.append_clean(textwrap.fill(current.get(element, {}).get('summary', ''), 80))
+        root.append_clean('\n\n')
 
         for fragment in current_elements:
             el = PyOrgMode.OrgNode.Element()

@@ -34,8 +34,10 @@ def extract(root):
                     clsn.append(match.groups()[1])
             else:
                 if line.strip():
-                    lines = element.setdefault('summary', [])
-                    lines.append(line)
+                    element.setdefault('summary', "")
+                    element['summary'] = element['summary'] + line + ' '
+        if element.get('summary'):
+            element['summary'] = element['summary'].strip()
 
     return root
 
