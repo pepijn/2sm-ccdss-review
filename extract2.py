@@ -20,7 +20,8 @@ for page_number, fragments in (yaml.load(open(sys.argv[1])) or {}).get('pages', 
         coords = tuple([tuple(c) for c in fragment['coords']])
         page[coords] = set(fragment['elements'].keys())
 
-doc = popplerqt4.Poppler.Document.loadFromData(sys.stdin.read())
+pdf = sys.stdin.buffer.read()
+doc = popplerqt4.Poppler.Document.loadFromData(pdf)
 total_annotations = 0
 for i in range(doc.numPages()):
     #print("========= PAGE {} =========".format(i+1))
@@ -46,7 +47,7 @@ for i in range(doc.numPages()):
                                 quad.points[2].y() * pheight)
                         bdy = PyQt4.QtCore.QRectF()
                         bdy.setCoords(*rect)
-                        txt = txt + unicode(page.text(bdy)) + ' '
+                        txt = txt + page.text(bdy) + ' '
 
                         all_coords.append(tuple(int(coord) for coord in rect))
                         coords = str(all_coords[-1])[1:-1]
@@ -54,8 +55,6 @@ for i in range(doc.numPages()):
 
                     el = PyOrgMode.OrgNode.Element()
                     el.append_clean(props)
-
-                    txt = txt.encode('utf8', 'ignore')
 
                     el.heading = txt[:45].strip() + '...'
 
@@ -93,6 +92,6 @@ for i in range(doc.numPages()):
                     output.root.append_clean(el)
 
 import tempfile
-with tempfile.NamedTemporaryFile() as t:
+with tempfile.NamedTemporaryFile('r') as t:
     output.save_to_file(t.name)
     print(t.read())

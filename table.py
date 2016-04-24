@@ -3,8 +3,30 @@ import numpy
 import pandas as pd
 from pprint import pprint
 import sys
+from PyOrgMode import PyOrgMode
+
+elements = PyOrgMode.OrgDataStructure()
+elements.load_from_file('elements.org')
 
 rows = []
+
+def categories(element):
+    # recursive; return ['Cognitive-behavioral flow', 'Presentation']
+
+    def extract(root):
+        if all([]):
+
+            return root.heading
+
+        for node in root.content:
+            extract(node)
+
+    extract(elements.root)
+
+categories('Patient')
+
+exit
+
 
 for study_path in sys.argv[1:]:
     elements = yaml.load(open(study_path))['elements']

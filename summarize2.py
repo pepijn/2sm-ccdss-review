@@ -88,6 +88,6 @@ def extract(root):
 checklist.root.content = [extract(n) for n in checklist.root.content]
 
 import tempfile
-with tempfile.NamedTemporaryFile() as t:
+with tempfile.NamedTemporaryFile('r') as t:
     checklist.save_to_file(t.name)
     print(t.read())
