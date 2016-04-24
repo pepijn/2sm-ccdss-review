@@ -5,28 +5,47 @@ from pprint import pprint
 import sys
 from PyOrgMode import PyOrgMode
 
-elements = PyOrgMode.OrgDataStructure()
-elements.load_from_file('elements.org')
+def categories(path):
+    elements = PyOrgMode.OrgDataStructure()
+    elements.load_from_file(path)
 
-rows = []
-
-def categories(element):
     # recursive; return ['Cognitive-behavioral flow', 'Presentation']
 
     def extract(root):
-        if all([]):
+        base = [root.heading] if root.heading.strip() else []
 
-            return root.heading
+        if all([type(node) is str for node in root.content]):
+            return base
+        else:
+            branches = [extract(node) for node in root.content if type(node) != str]
+            results = []
 
-        for node in root.content:
-            extract(node)
+            for branch in branches:
+                for subbranch in branch:
+                    if type(subbranch) is str:
+                        results.append(base + [subbranch])
+                    else:
+                        results.append(base + subbranch)
+            return results
 
-    extract(elements.root)
+    def tableize(items):
+        result = dict(element=items.pop(len(items) - 1))
+        stadia = ['category', 'subcategory']
+        for stadium in stadia:
+            try:
+                result[stadium] = items.pop(0)
+            except IndexError:
+                result[stadium] = ' '
+        return result
 
-categories('Patient')
+    return [tableize(element) for element in extract(elements.root)]
 
-exit
-
+categories = categories('elements.org')
+orders = []
+for item in categories:
+    orders.append(item['element'])
+categories = pd.DataFrame(categories).set_index('element')
+rows = []
 
 for study_path in sys.argv[1:]:
     elements = yaml.load(open(study_path))['elements']
@@ -38,7 +57,9 @@ for study_path in sys.argv[1:]:
                          element=element))
         rows.append(data)
 
-df = pd.DataFrame(rows).set_index(['study', 'element'])
+df = pd.DataFrame(rows) \
+       .join(categories, on='element') \
+       .set_index(['study', 'category', 'subcategory', 'element'])
 
 def classify(flags):
     classifications = {
@@ -64,9 +85,10 @@ def quantify(classification):
 
 df['score'] = df['classification'].map(quantify)
 
-df = df[['flags', 'classification', 'score', 'summary']]
+df = df[['flags', 'classification', 'score', 'summary']].sort_index(level=['study', 'category', 'subcategory']) \
+                                                        .reindex(['Common', 'Clinical stream', 'Cognitive-behavioral stream'], level=1) \
+                                                        .reindex(orders, level=3)
+
 df.to_excel('tmp/studies.xlsx')
 
-df.reset_index(1)\
-  .pivot(columns='element', values='score')\
-  .to_excel('tmp/elements.xlsx')
+df['score'].unstack(['category', 'subcategory', 'element']).to_excel('tmp/elements.xlsx')
