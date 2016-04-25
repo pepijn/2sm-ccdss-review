@@ -4,6 +4,9 @@ import pandas as pd
 from pprint import pprint
 import sys
 from PyOrgMode import PyOrgMode
+import os
+
+script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
 
 def categories(path):
     elements = PyOrgMode.OrgDataStructure()
@@ -29,7 +32,7 @@ def categories(path):
             return results
 
     def tableize(items):
-        result = dict(element=items.pop(len(items) - 1))
+        result = dict(Element=items.pop(len(items) - 1))
         stadia = ['category', 'subcategory']
         for stadium in stadia:
             try:
@@ -40,11 +43,13 @@ def categories(path):
 
     return [tableize(element) for element in extract(elements.root)]
 
-categories = categories('elements.org')
+filename = 'elements.org'
+
+categories = categories(os.path.join(script_dir, filename))
 orders = []
 for item in categories:
-    orders.append(item['element'])
-categories = pd.DataFrame(categories).set_index('element')
+    orders.append(item['Element'])
+categories = pd.DataFrame(categories).set_index('Element')
 rows = []
 
 for study_path in sys.argv[1:]:
@@ -53,13 +58,15 @@ for study_path in sys.argv[1:]:
     study_name = study_path[9:-4]
 
     for element, data in elements.items():
-        data.update(dict(study=study_name,
-                         element=element))
+        data.update(dict(Study=study_name,
+                         Element=element,
+                         Summary=data.pop('summary', None)))
+
         rows.append(data)
 
 df = pd.DataFrame(rows) \
-       .join(categories, on='element') \
-       .set_index(['study', 'category', 'subcategory', 'element'])
+       .join(categories, on='Element') \
+       .set_index(['Study', 'category', 'subcategory', 'Element'])
 
 def classify(flags):
     classifications = {
@@ -83,12 +90,27 @@ def quantify(classification):
 
     return quantifications[classification]
 
-df['score'] = df['classification'].map(quantify)
+df['Score'] = df['classification'].map(quantify)
 
-df = df[['flags', 'classification', 'score', 'summary']].sort_index(level=['study', 'category', 'subcategory']) \
+df = df[['flags', 'classification', 'Score', 'Summary']].sort_index(level=['Study', 'category', 'subcategory']) \
                                                         .reindex(['Common', 'Clinical stream', 'Cognitive-behavioral stream'], level=1) \
                                                         .reindex(orders, level=3)
 
 df.to_excel('tmp/studies.xlsx')
+out = df.reset_index(['category', 'subcategory'])[['Score', 'Summary']] \
+        .fillna('') \
+        .to_latex()
+out = out.replace('tabular', 'longtable')
+open('tmp/studies.tex', 'w').write(out)
 
-df['score'].unstack(['category', 'subcategory', 'element']).to_excel('tmp/elements.xlsx')
+
+df2 = df['Score'].unstack(['category', 'subcategory', 'Element'])
+df2.to_excel('tmp/elements.xlsx')
+
+out = df.reset_index().pivot('Study', 'Element', 'Score')[df.index.levels[3]].to_latex()
+out = out.replace('tabular', 'longtable')
+
+for element in categories.reset_index()['Element']:
+    out = out.replace(element, '\\rot{%s}' % element, 1)
+
+open('tmp/elements.tex', 'w').write(out)
