@@ -9,8 +9,8 @@ ELEMENTS="elements/$STUDY.yml"
 touch $ELEMENTS
 
 TMP="$(gmktemp -t "$STUDY (tmp-XXX).org")"
-python extract2.py "$FRAGMENTS" < "$1" \
-    | python summarize2.py "$ELEMENTS" > "$TMP"
+python extract.py "$FRAGMENTS" < "$1" \
+    | python summarize.py "$ELEMENTS" > "$TMP"
 
 $EDITOR "$TMP"
 

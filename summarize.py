@@ -1,208 +1,93 @@
-import sys
 from sys import exit
-import poppler
-import urllib
-import os
-from pdb import set_trace
-import string
-import csv
-import re
 from PyOrgMode import PyOrgMode
-import textwrap
-import dateutil.parser
-from datetime import timedelta, datetime
 from pprint import pprint
+import popplerqt4
+import sys
+import PyQt4
+import textwrap
+import yaml
+import re
 
 checklist = PyOrgMode.OrgDataStructure()
 checklist.load_from_file('elements.org')
+checklist.root.content.insert(0, '#+STARTUP: showall\n')
+
+source = PyOrgMode.OrgDataStructure()
+source.load_from_string(sys.stdin.read())
+
+current = {}
+for element_name, contents in (yaml.load(open(sys.argv[1])) or {}).get('elements', {}).items():
+    current[element_name] = contents
 
 elements = {}
-checklist_items = {}
+el_indexes = []
 
-def extract(root):
-    if type(root) is str:
-        if root.strip():
-            return root
-        else:
-            return
+classifications = ['Reported',
+                   'Not reported',
+                   'Inferred but nearly certain',
+                   'Inferred and uncertain']
 
-    for node in root.content:
-        val = extract(node)
-        if type(val) is str:
-            element = root.heading
+for fragment in source.root.content[1:]:
+    for line in fragment.content[1:]:
+        match = re.match('\s+- \[X\] (.+)', line)
+        if not match:
+            continue
 
-            elements[element] = dict()
-
-            if not checklist_items.get(element, None):
-                checklist_items[element] = []
-
-            checklist_items[element].append(val)
-
-extract(checklist.root)
-pprint(checklist_items)
-
-studies = ['MYCIN']
-
-def extract(root):
-    if type(root) is str:
-        if root.strip():
-            return root
-        else:
-            return
-
-    for node in root.content:
-        val = extract(node)
-        if type(val) is str:
-            element = root.heading
-
-            if not elements.get(element, None):
-                elements[element] = dict(MYCIN=[])
-
-            elements[element]['MYCIN'].append(val)
-
-example = PyOrgMode.OrgDataStructure()
-example.load_from_file('mycin.org')
-
-extract(example.root)
-
-files = sys.argv[1:]
-
-for row in csv.DictReader(open('sources/articles.csv')):
-    study = row.pop('Study')
-    studies.append(study)
-
-for path in files:
-    study = path[8:-4]
-    base = PyOrgMode.OrgDataStructure()
-    base.load_from_file(path)
-
-    def extract(root):
-        if type(root) is str:
-            return
-
-        # Is done
-        if hasattr(root, 'scheduled'):
-            element = None
-            if root.parent.heading in elements.keys():
-                element = root.parent.heading
-            elif root.parent.parent.heading in elements.keys():
-                element = root.parent.parent.heading
-
-            if element:
-                example = False
-                for line in root.parent.content:
-                    if type(line) is not str:
-                        continue
-
-                    line = line.strip()
-
-                    if not line:
-                        continue
-
-                    if line[0:6] == '#+END_':
-                        example = False
-                        continue
-
-                    if example:
-                        continue
-
-                    if line[0:8] == '#+BEGIN_':
-                        example = True
-                        continue
-
-                    if not elements[element].get(study, None):
-                        elements[element][study] = []
-
-                    elements[element][study].append(line)
-
-        for node in root.content:
-            extract(node)
-
-    extract(base.root)
-
-struct = PyOrgMode.OrgDataStructure()
-extraction = PyOrgMode.OrgNode.Element()
-extraction.heading = 'Data extraction'
-struct.root.append_clean('#+TITLE: Bachelor thesis progress summary\n')
-struct.root.append_clean(extraction)
+        element = elements.setdefault(match.groups()[0], set())
+        element.add(fragment)
+        el_indexes.append(fragment)
 
 def extract(root):
     if type(root) is str:
         return root
 
-    string_branches = [type(extract(node)) is str for node in list(root.content)]
+    branches = [type(extract(node)) is str for node in root.content]
 
-    if all(string_branches):
-        element = str(root.heading)
+    if all(branches):
+        element = root.heading
+        current_elements = elements.get(element, [])
+
+        if current.get(element, {}).get('classification', []):
+            root.todo = 'DONE'
+        else:
+            root.todo = 'TODO'
+
         root.content = []
-        root.append_clean(checklist_items[element])
+        for classification in classifications:
+            if classification in current.get(element, {}).get('classification', []):
+                root.append_clean('- [X] %s\n' % classification)
+            else:
+                root.append_clean('- [ ] %s\n' % classification)
+
         root.append_clean('\n')
 
-        dones = 0
-        not_dones = 0
-        for study in studies:
+        root.append_clean(textwrap.fill(current.get(element, {}).get('summary', ''), 80))
+        root.append_clean('\n\n')
+
+        for fragment in current_elements:
             el = PyOrgMode.OrgNode.Element()
-            el.heading = study
-            lines = elements[element].get(study, [])
+            el.heading = "Fragment %s" % str(el_indexes.index(fragment) + 1)
 
-            if study == 'MYCIN':
-                pass
-            elif lines:
-                dones += 1
-                el.todo = 'DONE'
-            else:
-                not_dones += 1
-                el.todo = 'TODO'
+            for line in fragment.content[:-2]:
+                if type(line) is str and line[:8] == '- Common':
+                    break
 
-            for line in lines:
-                el.append_clean('- ' + line)
+                el.append_clean(line)
                 el.append_clean('\n')
-            el.append_clean('\n')
-
             root.append_clean(el)
 
-        root.heading = element + " [%s/%s]" % (dones, dones + not_dones)
         root.append_clean('#+LaTeX: \\newpage\n')
+    else:
+        root.heading = root.heading + ' [%]'
+        props = PyOrgMode.OrgDrawer.Element("PROPERTIES")
+        props.append(PyOrgMode.OrgDrawer.Property("COOKIE_DATA", 'todo recursive'))
+        root.content.insert(0, props)
 
     return root
 
-extraction.append_clean(extract(checklist.root).content)
+checklist.root.content = [extract(n) for n in checklist.root.content]
 
-data = open('sources/excluded.csv')
-
-exclusion_reasons = {}
-
-for row in csv.DictReader(data):
-    study = row.pop('Study')
-    exclusion_reason = str.split(row.pop('Notes')[18:-1], ';')[0]
-    if not exclusion_reasons.get(exclusion_reason, None):
-        exclusion_reasons[exclusion_reason] = []
-    exclusion_reasons[exclusion_reason].append(dict(
-        study=study,
-        title=row.pop('Title')
-    ))
-
-ex = PyOrgMode.OrgNode.Element()
-ex.heading = 'Excluded'
-struct.root.append_clean(ex)
-
-ftr = PyOrgMode.OrgNode.Element()
-ftr.heading = 'Full-text review'
-ex.append_clean(ftr)
-
-for exclusion_reason, studies in exclusion_reasons.items():
-    reason = PyOrgMode.OrgNode.Element()
-    reason.heading = exclusion_reason
-
-    for study in studies:
-        stdy = PyOrgMode.OrgNode.Element()
-        stdy.heading = study['study']
-        stdy.append_clean(study['title'])
-        stdy.append_clean('\n')
-        stdy.append_clean('\n')
-        reason.append_clean(stdy)
-
-    reason.append_clean('#+LaTeX: \\newpage\n')
-    ftr.append_clean(reason)
-
-struct.save_to_file('progress.org')
+import tempfile
+with tempfile.NamedTemporaryFile('r') as t:
+    checklist.save_to_file(t.name)
+    print(t.read())

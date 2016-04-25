@@ -5,6 +5,6 @@ set -euxo pipefail
 STORE="fragments/$(basename "$1" .pdf).yml"
 
 TMP=$(gmktemp --suffix .org)
-python extract2.py "$STORE" < "$1" > $TMP
+python extract.py "$STORE" < "$1" > $TMP
 $EDITOR $TMP
 python save.py < $TMP > "$STORE"
