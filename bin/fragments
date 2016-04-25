@@ -2,7 +2,11 @@
 
 set -euxo pipefail
 
-STORE="fragments/$(basename "$1" .pdf).yml"
+STUDY="$(basename "$1" .pdf)"
+gpg --yes --encrypt --recipient p@epij.nl "$1"
+
+STORE="fragments/$STUDY.yml"
+
 
 TMP=$(gmktemp --suffix .org)
 python extract.py "$STORE" < "$1" > $TMP
