@@ -3,7 +3,10 @@
 set -euxo pipefail
 
 STUDY="$(basename "$1" .pdf)"
-gpg --yes --encrypt --recipient p@epij.nl "$1"
+
+if [ $(gpg --decrypt "$1.gpg" | md5) != $(md5 < "$1") ]; then
+   gpg --yes --encrypt --recipient p@epij.nl "$1"
+fi
 
 FRAGMENTS="fragments/$STUDY.yml"
 ELEMENTS="elements/$STUDY.yml"

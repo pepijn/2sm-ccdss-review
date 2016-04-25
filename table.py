@@ -101,7 +101,9 @@ out = df.reset_index(['category', 'subcategory'])[['Score', 'Summary']] \
         .fillna('') \
         .to_latex()
 out = out.replace('tabular', 'longtable')
-open('tmp/studies.tex', 'w').write(out)
+lines = out.splitlines()
+print(lines[0])
+open('tmp/studies.tex', 'w').write('\n'.join(lines[2:-1]))
 
 
 df2 = df['Score'].unstack(['category', 'subcategory', 'Element'])
@@ -113,4 +115,7 @@ out = out.replace('tabular', 'longtable')
 for element in categories.reset_index()['Element']:
     out = out.replace(element, '\\rot{%s}' % element, 1)
 
-open('tmp/elements.tex', 'w').write(out)
+lines = out.splitlines()
+print(lines[0])
+
+open('tmp/elements.tex', 'w').write('\n'.join(lines[2:-1]))
