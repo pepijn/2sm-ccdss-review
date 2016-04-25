@@ -8,7 +8,7 @@ gpg --yes --encrypt --recipient p@epij.nl "$1"
 FRAGMENTS="fragments/$STUDY.yml"
 ELEMENTS="elements/$STUDY.yml"
 
-touch $ELEMENTS
+touch "$ELEMENTS"
 
 TMP="$(gmktemp -t "$STUDY (tmp-XXX).org")"
 python extract.py "$FRAGMENTS" < "$1" \
