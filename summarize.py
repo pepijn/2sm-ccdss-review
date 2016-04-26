@@ -45,7 +45,7 @@ def extract(root):
 
     if all(branches):
         element = root.heading
-        current_elements = elements.get(element, [])
+        current_elements = list(elements.get(element, []))
 
         if current.get(element, {}).get('classification', []):
             root.todo = 'DONE'
@@ -63,7 +63,7 @@ def extract(root):
 
         root.append_clean(textwrap.fill(current.get(element, {}).get('summary', ''), 80))
         root.append_clean('\n\n')
-
+        current_elements.sort(key=lambda e: el_indexes.index(e))
         for fragment in current_elements:
             el = PyOrgMode.OrgNode.Element()
             el.heading = "Fragment %s" % str(el_indexes.index(fragment) + 1)
