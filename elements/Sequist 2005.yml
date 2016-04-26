@@ -1,0 +1,54 @@
+elements:
+  Channel:
+    classification:
+    - Reported
+  Clinical advice:
+    classification:
+    - Reported
+  Clinical conclusions:
+    classification:
+    - Reported
+  Clinical knowledge:
+    classification:
+    - Reported
+  Cognitive-behavioral conclusions:
+    classification:
+    - Inferred but nearly certain
+  Cognitive-behavioral knowledge:
+    classification:
+    - Reported
+  Content:
+    classification:
+    - Reported
+  Decision-support system:
+    classification:
+    - Reported
+    - Not reported
+  Format:
+    classification:
+    - Reported
+  Interaction functions:
+    classification:
+    - Inferred but nearly certain
+  Notification:
+    classification:
+    - Not reported
+  Patient:
+    classification:
+    - Reported
+  Patient data:
+    classification:
+    - Reported
+  Timing:
+    classification:
+    - Reported
+  Trigger:
+    classification:
+    - Reported
+  User data:
+    classification:
+    - Inferred but nearly certain
+  User(s):
+    classification:
+    - Reported
+
