@@ -119,8 +119,7 @@ print(lines[0])
 
 open('tmp/elements.tex', 'w').write('\n'.join(lines[2:-1]))
 
-df2 = df.reset_index().replace(['Clinical conclusions', 'Cognitive-behavioral conclusions'], ['Conclusions', 'Conclusions'])\
-                      .groupby(['Category', 'Subcategory', 'Element', 'Classification'])['Study'].count().unstack().fillna(0).applymap(np.int)\
+df2 = df.reset_index().groupby(['Category', 'Subcategory', 'Element', 'Classification'])['Study'].count().unstack().fillna(0).applymap(np.int)\
                       .reindex(['Common', 'Clinical stream', 'Cognitive-behavioral stream'], level=0)\
                       .reindex(orders, level=2)
 out = df2.to_latex()
