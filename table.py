@@ -1,6 +1,7 @@
 import yaml
 import numpy
 import pandas as pd
+import numpy as np
 from pprint import pprint
 import sys
 from PyOrgMode import PyOrgMode
@@ -11,8 +12,6 @@ script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
 def categories(path):
     elements = PyOrgMode.OrgDataStructure()
     elements.load_from_file(path)
-
-    # recursive; return ['Cognitive-behavioral flow', 'Presentation']
 
     def extract(root):
         base = [root.heading] if root.heading.strip() else []
@@ -33,7 +32,7 @@ def categories(path):
 
     def tableize(items):
         result = dict(Element=items.pop(len(items) - 1))
-        stadia = ['category', 'subcategory']
+        stadia = ['Category', 'Subcategory']
         for stadium in stadia:
             try:
                 result[stadium] = items.pop(0)
@@ -66,7 +65,7 @@ for study_path in sys.argv[1:]:
 
 df = pd.DataFrame(rows) \
        .join(categories, on='Element') \
-       .set_index(['Study', 'category', 'subcategory', 'Element'])
+       .set_index(['Study', 'Category', 'Subcategory', 'Element'])
 
 def classify(flags):
     classifications = {
@@ -77,7 +76,7 @@ def classify(flags):
 
 classifications = df['classification']
 df['flags'] = classifications.map(lambda cs: ', '.join(cs))
-df['classification'] = classifications.map(classify)
+df['Classification'] = classifications.map(classify)
 
 def quantify(classification):
     quantifications = {
@@ -90,14 +89,14 @@ def quantify(classification):
 
     return quantifications[classification]
 
-df['Score'] = df['classification'].map(quantify)
+df['Score'] = df['Classification'].map(quantify)
 
-df = df[['flags', 'classification', 'Score', 'Summary']].sort_index(level=['Study', 'category', 'subcategory']) \
+df = df[['flags', 'Classification', 'Score', 'Summary']].sort_index(level=['Study', 'Category', 'Subcategory']) \
                                                         .reindex(['Common', 'Clinical stream', 'Cognitive-behavioral stream'], level=1) \
                                                         .reindex(orders, level=3)
 
 df.to_excel('tmp/studies.xlsx')
-out = df.reset_index(['category', 'subcategory'])[['Score', 'Summary']] \
+out = df.reset_index(['Category', 'Subcategory'])[['Score', 'Summary']] \
         .fillna('') \
         .to_latex()
 out = out.replace('tabular', 'longtable')
@@ -106,7 +105,7 @@ print(lines[0])
 open('tmp/studies.tex', 'w').write('\n'.join(lines[2:-1]))
 
 
-df2 = df['Score'].unstack(['category', 'subcategory', 'Element'])
+df2 = df['Score'].unstack(['Category', 'Subcategory', 'Element'])
 df2.to_excel('tmp/elements.xlsx')
 
 out = df.reset_index().pivot('Study', 'Element', 'Score')[df.index.levels[3]].to_latex()
@@ -119,3 +118,16 @@ lines = out.splitlines()
 print(lines[0])
 
 open('tmp/elements.tex', 'w').write('\n'.join(lines[2:-1]))
+
+df2 = df.reset_index().replace(['Clinical conclusions', 'Cognitive-behavioral conclusions'], ['Conclusions', 'Conclusions'])\
+                      .groupby(['Category', 'Subcategory', 'Element', 'Classification'])['Study'].count().unstack().fillna(0).applymap(np.int)\
+                      .reindex(['Common', 'Clinical stream', 'Cognitive-behavioral stream'], level=0)\
+                      .reindex(orders, level=2)
+out = df2.to_latex()
+for element in list(df2.columns):
+    out = out.replace(element, '\\rot{%s}' % element, 1)
+
+lines = out.splitlines()
+
+print(lines[0])
+open('tmp/classifications.tex', 'w').write('\n'.join(lines[2:-1]))
