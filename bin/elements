@@ -20,3 +20,6 @@ python extract.py "$FRAGMENTS" < "$1" \
 $EDITOR "$TMP"
 
 python save_elements.py < "$TMP" > "$ELEMENTS"
+
+ipython table.py elements/*
+ipython fragments.py fragments/* | tail -n +3 | ghead -n -2 > tmp/fragments.tex
