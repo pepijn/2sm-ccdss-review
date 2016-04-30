@@ -1,53 +1,8 @@
 elements:
-  Channel:
-    classification:
-    - Reported
-  Clinical advice:
-    classification:
-    - Reported
-  Clinical conclusions:
-    classification:
-    - Reported
   Clinical knowledge:
-    classification:
-    - Reported
-  Cognitive-behavioral conclusions:
-    classification:
-    - Inferred but nearly certain
-  Cognitive-behavioral knowledge:
-    classification:
-    - Reported
-  Content:
-    classification:
-    - Reported
-  Decision-support system:
-    classification:
-    - Inferred but nearly certain
-  Format:
-    classification:
-    - Reported
-  Interaction functions:
-    classification:
-    - Reported
-  Notification:
-    classification:
-    - Not reported
+    Evidence-based guidelines: 'Yes'
   Patient:
-    classification:
-    - Reported
-  Patient data:
-    classification:
-    - Reported
-  Timing:
-    classification:
-    - Reported
+    Disease: Uncomplicated hypertension
+    Population: Patients with
   Trigger:
-    classification:
-    - Reported
-  User data:
-    classification:
-    - Reported
-  User(s):
-    classification:
-    - Reported
-
+    Trigger: Initiated after user input

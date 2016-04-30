@@ -1,5 +1,6 @@
 elements:
   Clinical knowledge:
     Evidence-based guidelines: 'Yes'
-  Patient:
-    Disease: Diabetes and/or CAD
+    Guideline: NAEPP
+  Decision-support system:
+    E H R: EpicCare

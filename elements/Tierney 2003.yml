@@ -2,6 +2,6 @@ elements:
   Clinical knowledge:
     Evidence-based guidelines: 'Yes'
   Patient:
-    Disease: None
+    Disease: Heart failure and/or ischemic heart disease
   Trigger:
     Trigger: Initiated after user input

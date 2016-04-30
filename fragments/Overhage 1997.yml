@@ -10,6 +10,7 @@ pages:
       - [128, 420, 479, 429]
       - [89, 431, 487, 440]
       elements:
+        Decision-support system: []
         User(s): []
     - coords:
       - [490, 431, 501, 440]

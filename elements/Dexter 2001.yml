@@ -1,73 +1,10 @@
 elements:
-  Channel:
-    classification:
-    - Reported
-    summary: Integrated into the order-entry system for inpatients.
-  Clinical advice:
-    classification:
-    - Reported
-    summary: Prewritten orders with explanatory text.
-  Clinical conclusions:
-    classification:
-    - Reported
-    summary: Indication for a preventitive therapy.
   Clinical knowledge:
-    classification:
-    - Reported
-    summary: National guidelines regarding the use of preventitive interventions;
-      'flu-shot season'.
-  Cognitive-behavioral conclusions:
-    classification:
-    - Reported
-    summary: User wants to order or omit the recommended therapy.
-  Cognitive-behavioral knowledge:
-    classification:
-    - Reported
-    summary: The need to increase preventitive care among hospitalized patients.
-  Content:
-    classification:
-    - Reported
-    summary: Prewritten orders with explanatory text.
+    Evidence-based guidelines: 'Yes'
   Decision-support system:
-    classification:
-    - Reported
-    summary: Rule-based reminder system.
-  Format:
-    classification:
-    - Reported
-    summary: The recommendations are displayed in a different color scheme than the
-      physician-initiated orders.
-  Interaction functions:
-    classification:
-    - Reported
-    summary: '''Escape'' key disabled; accept or reject orders with two keystrokes.
-      Default value changes depending on patient.'
-  Notification:
-    classification:
-    - Inferred but nearly certain
+    Knowledge representation: Care rules
   Patient:
-    classification:
-    - Reported
-    summary: Patients admitted to general-medicine service.
-  Patient data:
-    classification:
-    - Reported
-    summary: Demographic characteristics of the patient, list of medical problems,
-      diagnoses etc.; vaccination status.
-  Timing:
-    classification:
-    - Inferred but nearly certain
-    summary: Immediate
+    Disease: None
+    Population: Patients admitted to general-medicine service
   Trigger:
-    classification:
-    - Reported
-    summary: Initialized when the user starts an order-entry session.
-  User data:
-    classification:
-    - Reported
-    summary: Accept or rejects reminders.
-  User(s):
-    classification:
-    - Reported
-    summary: Resident physicians and medical students on general-medicine teams.
-
+    Trigger: Initiated after user input

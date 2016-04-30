@@ -46,21 +46,3 @@ Conclusions that the system can draw about the user.
 
 ** Presentation
 How advice/output is presented to the user, in terms of:
-
-*** Content
-Content (eg, framing)
-
-*** Timing
-Timing
-
-*** Channel
-Channel
-
-*** Format
-Format
-
-*** Notification
-Notification
-
-*** Interaction functions
-Interaction functions
