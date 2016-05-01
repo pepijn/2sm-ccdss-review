@@ -1,5 +1,13 @@
 elements:
+  Clinical advice:
+    Clinical advice: Electronic clinical reminders
   Clinical knowledge:
     Evidence-based guidelines: 'Yes'
+  Cognitive-behavioral knowledge:
+    Summary: Need to promote receipt of standards care.
   Patient:
     Disease: Diabetes and/or CAD
+  Patient data:
+    EHR data: Partners
+  User(s):
+    Role: Physicians

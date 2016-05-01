@@ -1,8 +1,21 @@
 elements:
+  Clinical advice:
+    Clinical advice: Treatment suggestions
+  Clinical conclusions:
+    Conclusions: Eligible care suggestions
   Clinical knowledge:
     Evidence-based guidelines: 'Yes'
+  Cognitive-behavioral knowledge:
+    Summary: Need to improve quality of patient care.
   Patient:
     Disease: Uncomplicated hypertension
     Population: Patients with
+  Patient data:
+    EHR data: Regenstrief Medical Record System
+    User entry: User
   Trigger:
     Trigger: Initiated after user input
+  User data:
+    User data: Data entered after visit
+  User(s):
+    Role: Physician

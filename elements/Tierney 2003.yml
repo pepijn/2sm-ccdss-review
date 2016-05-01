@@ -1,7 +1,17 @@
 elements:
+  Clinical advice:
+    Clinical advice: Care suggestions
   Clinical knowledge:
     Evidence-based guidelines: 'Yes'
+  Cognitive-behavioral knowledge:
+    Summary: Need to assess the effect of suggestions.
   Patient:
     Disease: Heart failure and/or ischemic heart disease
+  Patient data:
+    EHR data: Regenstrief Medical Record System
   Trigger:
     Trigger: Initiated after user input
+  User data:
+    User data: Data entered at start of order-writing session
+  User(s):
+    Role: Physicians and pharmacists

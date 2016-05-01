@@ -1,10 +1,32 @@
 elements:
+  Clinical advice:
+    Clinical advice: Computerized reminder
   Clinical knowledge:
     Evidence-based guidelines: 'Yes'
+  Cognitive-behavioral conclusion:
+    Conclusions: User accepts or rejects recommendations.
+  Cognitive-behavioral knowledge:
+    Summary: Need to increase use of preventitive care among hospitalized patients.
   Decision-support system:
     Knowledge representation: Care rules
   Patient:
     Disease: None
     Population: Patients admitted to general-medicine service
+  Patient data:
+    EHR data: Routinely collected
+    Types reported: 'Yes'
+    User entry: Research assistent or nurse
+  Presentation:
+    Channel: Intergrated into order-entry system.
+    Content: Prewritten orders with explanatory text.
+    Format: Recommendations displayed in different color
+    Interaction functions: Escape key disabled, accept or reject order.
+    Notification: Not reported
+    Timing: Immediate
   Trigger:
     Trigger: Initiated after user input
+  User data:
+    User data: Accept or reject order
+  User(s):
+    Role: Resident physicians and medical students
+    Setting: General-medicine service

@@ -28,7 +28,7 @@ elements = [
 
 columns = ['Study', 'Coordinates', 'Page', 'Text'] + elements
 
-dfs = pd.read_excel('quality measures.xlsx', None)
+dfs = pd.read_excel(sys.argv[1], None)
 df = pd.DataFrame()
 
 for element, edf in dfs.items():

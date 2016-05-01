@@ -1,6 +1,8 @@
 elements:
+  Clinical advice:
+    Clinical advice: Alerts and reminders
   Clinical knowledge:
     Evidence-based guidelines: 'Yes'
     Guideline: NAEPP
-  Decision-support system:
-    E H R: EpicCare
+  Presentation:
+    EHR: EpicCare

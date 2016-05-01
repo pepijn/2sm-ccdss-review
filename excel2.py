@@ -52,10 +52,13 @@ for element in elements:
 for path in sys.argv[1:]:
     study = path[9:-4]
 
+    for element in elements:
+        dfs[element] = dfs[element].join(pd.DataFrame([dict(Study=study)]).set_index('Study'), how='outer')
+
     for element, attributes in yaml.load(open(path))['elements'].items():
         for attribute, value in attributes.items():
             dfs[element] = dfs[element].set_value(study, attribute, value)
 
-with pd.ExcelWriter('/tmp/unit.xlsx') as writer:
+with pd.ExcelWriter('tmp/qualitative_synthesis.xlsx') as writer:
     for element in elements:
         dfs[element].to_excel(writer, element[:31])
