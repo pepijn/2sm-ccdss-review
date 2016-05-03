@@ -13,3 +13,7 @@
 ### Build document
 
     fswatch --one-per-batch {,sections/}*.tex data/tmp | xargs -n1 pdflatex bachelor_thesis.tex
+
+## Helpful during extraction
+
+    watch --no-title -n0 'fswatch -1 tmp/* view.py | xargs -I{} -n1 python view.py tmp/Dexter2001.yml tmp/McCowan2001.yml | tail -n+3'
