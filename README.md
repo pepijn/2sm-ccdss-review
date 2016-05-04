@@ -16,4 +16,4 @@
 
 ## Helpful during extraction
 
-    watch --color -n0 'fswatch -1 tmp/* view.py | xargs -I{} -n1 python view.py tmp/Dexter2001.yml tmp/Murray2004.yml | tail -n+3 | awk \'/1/ {print "\033[32m\033[1m" $0 "\033[39m"} /0/ {print "\033[0m\033[0m" $0 "\033[39m"}\''
+    watch --color -n0 'fswatch -1 tmp/* view.py | xargs -I{} -n1 python view.py tmp/Dexter2001.yml tmp/Murray2004.yml | tail -n+3 | awk \'/ 1 \w{3} / {print "\033[32m\033[1m" $0 "\033[39m"} / 0 \w{3} / {print "\033[0m\033[0m" $0 "\033[39m"}\'''
