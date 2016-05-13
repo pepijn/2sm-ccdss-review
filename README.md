@@ -12,7 +12,7 @@
     
 ### Build document
 
-    fswatch --one-per-batch {,sections/}*.tex tmp | xargs -n1 pdflatex bachelor_thesis.tex
+    fswatch --one-per-batch --recursive bachelor_thesis.tex sections tmp | xargs -n1 pdflatex bachelor_thesis.tex
 
 ## Helpful during extraction
 
