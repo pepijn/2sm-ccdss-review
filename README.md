@@ -8,11 +8,11 @@
     
 ### Build tables
 
-    watch -n0 --beep --color 'fswatch --one-event tmp/* create_tables.py | xargs -I{} -n1 ipython create_tables.py tmp/*.yml'
+    fswatch tmp/*.yml create_tables2.py | xargs -t -I'{}' ipython create_tables2.py tmp/*.yml
     
 ### Build document
 
-    fswatch --one-per-batch --recursive bachelor_thesis.tex sections tmp | xargs -n1 pdflatex bachelor_thesis.tex
+    fswatch --one-per-batch --recursive bachelor_thesis.tex tables sections tmp | xargs -n1 pdflatex bachelor_thesis.tex
 
 ## Helpful during extraction
 
