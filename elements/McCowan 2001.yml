@@ -8,6 +8,8 @@ elements:
   Patient:
     Disease: Asthma
     Population: Patients with asthma
+  Patient data:
+    Integration (EHR): F None
   Presentation:
     Channel: Stand-alone, alongside practice software
     Content: Recommendations, reminders, risk prediction.

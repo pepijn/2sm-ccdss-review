@@ -9,6 +9,7 @@ elements:
     Disease: Heart failure and/or ischemic heart disease
   Patient data:
     EHR data: Regenstrief Medical Record System
+    Integration (EHR): F RMRS
   Trigger:
     Trigger: Initiated after user input
   User data:

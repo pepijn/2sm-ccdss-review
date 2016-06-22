@@ -9,6 +9,8 @@ elements:
     Summary: Need to reduce omissions.
   Patient:
     Disease: None
+  Patient data:
+    Integration (EHR): F RMRS
   Trigger:
     Trigger: Initiated after user input
   User data:

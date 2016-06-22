@@ -12,6 +12,7 @@ elements:
     Population: Patients with
   Patient data:
     EHR data: Regenstrief Medical Record System
+    Integration (EHR): F RMRS
     User entry: User
   Trigger:
     Trigger: Initiated after user input

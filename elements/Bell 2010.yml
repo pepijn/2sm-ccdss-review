@@ -4,5 +4,7 @@ elements:
   Clinical knowledge:
     Evidence-based guidelines: 'Yes'
     Guideline: NAEPP
+  Patient data:
+    Integration (EHR): F EpicCare
   Presentation:
-    EHR: EpicCare
+    Channel: EHR

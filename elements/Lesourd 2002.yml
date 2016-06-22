@@ -11,6 +11,7 @@ elements:
     Disease: Infertility
     Population: Women undergoing ovarian stimulation
   Patient data:
+    Integration (EHR): F None
     Types reported: 'Yes'
     User entry: Not reported
   Presentation:
@@ -18,7 +19,6 @@ elements:
     Content: Not reported
     Format: Not reported
     Interaction functions: Not reported
-    Notification: Not reported
     Timing: Not reported
   Trigger:
     Trigger: Not reported

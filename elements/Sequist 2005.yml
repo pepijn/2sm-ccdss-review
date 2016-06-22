@@ -9,5 +9,6 @@ elements:
     Disease: Diabetes and/or CAD
   Patient data:
     EHR data: Partners
+    Integration (EHR): F LMR
   User(s):
     Role: Physicians
