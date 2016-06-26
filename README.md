@@ -1,4 +1,5 @@
-# Annotation Attribute Extractor
+# Annotation Attribute Extractor [![DOI](https://zenodo.org/badge/22943/pepijn/annotation-attribute-extractor.svg)](https://zenodo.org/badge/latestdoi/22943/pepijn/annotation-attribute-extractor)
+
 
 Helpful for reproducible qualitative systematic reviews.
 
