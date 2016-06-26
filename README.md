@@ -1,6 +1,6 @@
 # Annotation Attribute Extractor
 
-Helpful for qualitative systematic reviews.
+Helpful for reproducible qualitative systematic reviews.
 
 ## Example usage
 
