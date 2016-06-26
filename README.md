@@ -1,4 +1,4 @@
-# Annotation attribute extractor
+# Annotation Attribute Extractor
 
 Helpful for qualitative systematic reviews.
 
